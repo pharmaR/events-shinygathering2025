@@ -1,11 +1,56 @@
 ---
-title: "Supporting Companies With Validation of R Packages: A Regulatory Repository"
+title: "Driving Consensus Through Repos"
 author:
-  - name: "<span>Coline Zeballos</span> <span style='font-style: italic; margin-left: 0.5em;'><a href='http://www.roche.com'>Roche</a></span>"
-  - name: "<span>Yann Féat</span> <span style='font-style: italic; margin-left: 0.5em;'><a href='http://mainanalytics.de'>mainanalytics</a></span>"
-institute: "<em>useR! 2024, July 9th</em>"
+  - name: _On behalf of the R Validation Hub team:_
+  - name: "<span style='margin-left: 2.0em;'>Aaron Clark</span> <span style='font-style: italic; margin-left: 0.5em;'><a href='http://arcusbio.com'>Arcus Biosciences</a></span>"
+  - name: "<span style='margin-left: 2.0em;'>Doug Kelkhoff</span> <span style='font-style: italic; margin-left: 0.5em;'><a href='http://www.roche.com'>Roche</a></span>"
+  - name: "<span style='font-weight: bold;'>R/Pharma Summit @ Posit Conf 2024, August 11th</span>"
+  - name: "<span style='margin-left: 2.0em;'>Slides available: [pharmar.github.io/events-positconf2024](https://pharmar.github.io/events-positconf2024)</span>"
 reference-location: margin
 ---
+
+
+{{< include _r_val_hub_intro.qmd >}}
+
+# 📊 A Quick Survey
+
+Keep your hand raised if...
+
+:::: {.incremental}
+- [It's early morning and you need an excuse to stretch]{.fragment .semi-fade-out}
+- [This is your first time hearing about the ***R Validation Hub***]{.fragment .semi-fade-out}
+- [Your org contributes to the ***R Validation Hub***]{.fragment .semi-fade-out}
+- [Your org leverages the ***R Validation Hub*** guidelines]{.fragment .semi-fade-out}
+- [Your org uses ***R Validation Hub*** tools (`{riskmetric}`, `{riskassessment}`)]{.fragment .semi-fade-out}
+::::
+
+
+# 🗓️  Agenda
+
+```{=html}
+<style>
+.dim {
+  font-style: italic;
+  font-weight: bold;
+  opacity: 0.35;  
+  margin: 0 0.5em;
+}
+
+.small {
+  font-size: 0.8em;
+}
+</style>
+```
+
+- Communications Workstream [5min]{.dim}
+- `{riskassessment}` App Workstream [5min]{.dim}
+- `{riskmetric}` workstream [10min]{.dim}  
+  _Watch for big changes coming_
+- Repositories Workstream  [25min]{.dim}
+- **Room Discussion** [10 - 15min]{.dim}
+- Closing
+
+{{< include _r_val_hub_workstream_updates.qmd >}}
 
 ## A Universal Conundrum {.scrollable}
 
