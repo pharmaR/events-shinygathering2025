@@ -1,14 +1,13 @@
 ---
 title: "Driving Consensus Through Repos"
 author:
+  - name: "<span style='font-weight: bold;'>R/Pharma Summit @ Posit Conf 2024, August 11th</span>"
+  - name: "<span style='margin-left: 2.0em;'>Slides available: [pharmar.github.io/events-positconf2024](https://pharmar.github.io/events-positconf2024)</span>"
+  - name: "<br>"
   - name: _On behalf of the R Validation Hub team:_
   - name: "<span style='margin-left: 2.0em;'>Aaron Clark</span> <span style='font-style: italic; margin-left: 0.5em;'><a href='http://arcusbio.com'>Arcus Biosciences</a></span>"
   - name: "<span style='margin-left: 2.0em;'>Doug Kelkhoff</span> <span style='font-style: italic; margin-left: 0.5em;'><a href='http://www.roche.com'>Roche</a></span>"
-  - name: "<span style='font-weight: bold;'>R/Pharma Summit @ Posit Conf 2024, August 11th</span>"
-  - name: "<span style='margin-left: 2.0em;'>Slides available: [pharmar.github.io/events-positconf2024](https://pharmar.github.io/events-positconf2024)</span>"
-reference-location: margin
 ---
-
 
 {{< include _r_val_hub_intro.qmd >}}
 
@@ -54,11 +53,11 @@ Keep your hand raised if...
 
 ## A Universal Conundrum {.scrollable}
 
-_There are `n` packages for `x`, which one is the best?[^1]_
+_There are `n` packages for `x`, which one is the best?[^best-package]_
 
 ![](resources/choosing_a_package.png)
 
-[^1]: [https://stackoverflow.com/questions/28650957]()
+[^best-package]: [https://stackoverflow.com/questions/28650957]()
 
 ::: {.notes}
 Coline
@@ -70,7 +69,7 @@ Coline
 
 ## A Universal Conundrum
 
-### By choosing packages, we're choosing our [^2]
+### By choosing packages, we're choosing our [^it-depends]
 
 * Feature set
 * Dependency footprint
@@ -78,7 +77,7 @@ Coline
 * Preferred lifecycle management of our tools
 * Community that we can lean on for help
 
-[^2]: [It depends: A dialog about dependencies, Jim Hester (2019)](https://www.jimhester.com/talk/2019-rsc-deps/)
+[^it-depends]: [It depends: A dialog about dependencies, Jim Hester (2019)](https://www.jimhester.com/talk/2019-rsc-deps/)
 
 ## A Universal Conundrum
 
@@ -507,79 +506,6 @@ Main intent: start a cross-company dialogue on infrastructure
 ::::
 
 # Closing
-
-## ![](resources/rc-logo.png){height="1.5em" style="padding: 0.2em; margin: 0 0.5em 0 0; border-radius: 0.5em; background: #FFF; vertical-align: middle;"} [R Consortium]{.hidden} Impact
-
-<style>
-.image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.image-container img {
-  margin: 0.2em;
-  max-width: 7em;  /* Adjust the size of the images as needed */
-  vertical-align: middle;
-}
-
-.panel {
-  font-size: 0.6em;
-  background: rgba(0.75, 0.75, 0.75, 0.1);
-  padding: 1%;
-  margin: 1%;
-  border-radius: 0.5em;
-  border-bottom: solid 0.2em rgba(1, 1, 1, 0.1);
-}
-
-.center {
-  text-align: center;
-}
-</style>
-
-<div class="image-container">
-  <img src="resources/r-ladies-logo.png">
-  <img src="resources/latinr-logo.png">
-  <img src="resources/r-medicine-logo.png">
-  <img src="resources/useR-logo.png">
-</div>
-
-::: {.columns}
-::: {.column width="29%" .panel .center}
-### Community Grants & Sponsorships
-Over USD $1.4 Million
-:::
-
-::: {.column width="29%" .panel .center}
-### Organizing Large Scale Collaborative Projects
-R Validation Hub, R-Ladies
-:::
-
-::: {.column width="29%" .panel .center}
-### Co-Host Multidisciplinary Data Science Forums
-Stanford Data Institute
-:::
-
-::: {.column width="29%" .panel .center}
-### Direct Support for Key R Events
-R/Medicine, R/Pharma, useR!, LatinR, and more
-:::
-
-::: {.column width="29%" .panel .center}
-### Direct Worldwide Support for R User Groups
-:::
-:::
-
-## Join us
-
-### [r-consortium.org](https://www.r-consortium.org)
-
-![](resources/rc-logo.png){ width="60%" .nostretch }
-
-* Help guide the future direction of the R language
-* Collaborate on cross industry initiatives
-* Raise your leadership profile in the R Community
-* Protect your investment in R while supporting the common good
 
 ## Thank you
 

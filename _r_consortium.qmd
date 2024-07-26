@@ -1,0 +1,87 @@
+## 🤝 Affiliates: ![](resources/r-consortium.png){height="1.5em" style="padding: 0.2em; margin: 0 0.5em 0 0; border-radius: 0.8em; background: #FFF; vertical-align: middle;"} [R Consortium]{.hidden} {transition="slide-in"}
+
+::: {style="font-size: 1.0em"}
+> Works with and provides support to the R Foundation and to the key
+> organizations developing, maintaining, distributing and using R software
+:::
+
+### Key Pharma Activities
+
+* The R Validation Hub
+* R Submission Working Group
+* R/Medicine
+* R-Hub
+* R Repositories Working Group (ie CRAN enhancements, future development)
+
+## ![](resources/r-consortium.png){height="1.5em" style="padding: 0.2em; margin: 0 0.5em 0 0; border-radius: 0.5em; background: #FFF; vertical-align: middle;"} [R Consortium]{.hidden} Impact
+
+<style>
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  margin: 0.2em;
+  max-width: 7em;  /* Adjust the size of the images as needed */
+  vertical-align: middle;
+}
+
+.panel {
+  font-size: 0.6em;
+  background: rgba(0.75, 0.75, 0.75, 0.1);
+  padding: 1%;
+  margin: 1%;
+  border-radius: 0.5em;
+  border-bottom: solid 0.2em rgba(1, 1, 1, 0.1);
+}
+
+.center {
+  text-align: center;
+}
+</style>
+
+<div class="image-container">
+  <img src="resources/r-ladies-logo.png">
+  <img src="resources/latinr-logo.png">
+  <img src="resources/r-medicine-logo.png">
+  <img src="resources/useR-logo.png">
+</div>
+
+::: {.columns}
+::: {.column width="29%" .panel .center}
+### Community Grants & Sponsorships
+Over USD $1.4 Million
+:::
+
+::: {.column width="29%" .panel .center}
+### Organizing Large Scale Collaborative Projects
+R Validation Hub, R-Ladies
+:::
+
+::: {.column width="29%" .panel .center}
+### Co-Host Multidisciplinary Data Science Forums
+Stanford Data Institute
+:::
+
+::: {.column width="29%" .panel .center}
+### Direct Support for Key R Events
+R/Medicine, R/Pharma, useR!, LatinR, and more
+:::
+
+::: {.column width="29%" .panel .center}
+### Direct Worldwide Support for R User Groups
+:::
+:::
+
+## Join the R Consortium
+
+### [r-consortium.org](https://www.r-consortium.org)
+
+![](resources/rc-logo.png){ width="60%" .nostretch }
+
+* Help guide the future direction of the R language
+* Collaborate on cross industry initiatives
+* Raise your leadership profile in the R Community
+* Protect your investment in R while supporting the common good
