@@ -45,7 +45,7 @@ _Robust scripted testing_ and _Limited scripted testing_ (traceable, reproducibl
 # 📣 Communications Workstream
 
 
-## [Case Studies](https://www.pharmar.org/casestudies/)
+## [Case Studies](https://www.pharmar.org/categories/case-studies/)
 > 7 Companies Shared their Approach to Package Validation in 2022
 
 <br>
