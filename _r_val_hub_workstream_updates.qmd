@@ -5,7 +5,6 @@
 # 📣 Communications Workstream
 
 
-<<<<<<< HEAD
 ## Community Meetings 🗓 TODO add cal icon
 
 ### In the last year...
