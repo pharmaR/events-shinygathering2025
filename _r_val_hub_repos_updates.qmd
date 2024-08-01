@@ -1,0 +1,434 @@
+---
+---
+
+# 📦 Repositories
+
+## Repositories Workstream
+
+::: { style="font-size: 1.2em;" }
+> Supporting a transparent, open, dynamic, cross-industry approach of
+> establishing and maintaining a _repository_ of R packages.
+:::
+
+* A **CRAN**-like repository
+* Providing package qualities for risk-based decision-making
+* Evaluated against representative systems
+* "Bring-your-own" quality cut-offs
+* Declarative quality decision-making
+
+## The Pulse of the Industry
+
+* Our whitepaper is widely adopted
+* But implementing it is inconsistent & laborious
+  * Variations throughout industry pose uncertainty
+  * Sharing software with health authorities is a challenge
+  * Health authorities, overwhelmed by technical inconsistencies, are more
+    likely to question software use
+* We feel the most productive path forward is a shared ecosystem
+* Public discussion on how to characterize quality code/methods
+
+## Goals
+
+::: { .columns }
+::: { .column .panel style="width: 40%; font-size: 0.95em;" }
+### Generating Quality Indicators
+
+* Provide a community-maintained catalog of package quality indicators ("risk
+  metrics")
+* Calculated against cohort of packages
+* Known system
+* Consistently evaluated, with transparent methods
+:::
+
+::: { .column .panel style="width: 40%; font-size: 0.95em;" }
+### Consolidate Decision-Making
+
+* Serve subsets of packages that conform to a specified risk tolerance
+* Transparently demonstrate selection criteria
+* Allows for one-off-analysis from public repo
+* .. or mirroring of filtered snapshot
+:::
+:::
+
+## An evolving R ecosystem
+
+> In close communication with many beloved R projects
+
+:::{ .columns }
+:::{ .column .center .panel width="25%" }
+![](resources/rc-logo.png)
+
+### Submissions Working Group
+:::
+
+:::{ .column .center .panel width="25%" }
+![](resources/rc-logo.png)
+
+### Repositories Working Group
+:::
+
+:::{ .column .center .panel width="25%" }
+![](resources/pharmaverse.png){ width="30%" }
+
+### `pharmaverse`
+:::
+
+:::{ .column .center .panel width="25%" }
+![](resources/r-hub.png){ width="50%" }
+
+targetting `repos` integration
+:::
+
+:::{ .column .center .panel width="25%" }
+![](resources/r-lib.png){ width="40%" }
+
+### `r-lib/pak`
+
+targetting `pak` integration
+:::
+:::
+
+## Pilot Implementation
+
+_focus on proving capabilities, quick development_
+
+![](resources/pilot.drawio.svg){ style='width: 100%; height: 100%; margin: 2em 0;' }
+
+# Interacting with the repo
+
+## Packages risk filters
+
+::: columns
+::: {.column width="50%"}
+
+- Helper package for system administrators
+- Restricts packages available for installation to those fitting a policy
+- Uses packages metadata in the repo
+- May be used together with manual checks (e.g., read a statistical review)
+:::
+::: {.column width="50%"}
+```{mermaid}
+flowchart TD
+  A[All packages] --> B{Code\n covr.\n > 95%?}
+  B -- Yes --> C{Has\n doc.?}
+  C -- Yes --> D(Available for safety-critical activities)
+```
+:::
+:::
+
+## Usage
+
+```{r}
+#| echo: false
+summarize_available_packages <- function(ap) {
+  out <- cbind(ap, data.frame("..." = "..."))
+  out <- out[c(1:4, nrow(ap)), c("Package", "...")]
+  out[4,] <- c("...", "...")
+  rownames(out) <- c("1", "2", "3", "...", nrow(ap))
+  out
+}
+```
+
+::: columns
+::: {.column width="50%"}
+### Unfiltered
+
+```{=r}
+available.packages()
+```
+```{=r}
+pkgs_nofltr_path <- file.path(here::here(), "resources", "pkgs_nofltr.rds")
+pkgs_nofltr <- readRDS(file = pkgs_nofltr_path)
+summarize_available_packages(pkgs_nofltr)
+```
+:::
+
+::: {.column width="50%"}
+### Filtered
+```{=r}
+fltr <- risk_filter(covr_coverage > 0.95
+  & has_vignettes)
+options(available_packages_filters = fltr)
+available.packages()
+```
+```{=r}
+pkgs_fltr_path <- file.path(here::here(), "resources", "pkgs_fltr.rds")
+pkgs_fltr <- readRDS(file = pkgs_fltr_path)
+summarize_available_packages(pkgs_fltr)
+```
+:::
+:::
+
+# Repository ‘back-end’
+
+## Infrastructure setup
+
+::: columns
+::: {.column width="50%"}
+- Hosts risk assessment metadata
+- Links to artifacts of the R-hub check system (via `DownloadURL`)
+- Integrates with `pak::pkg_install`
+- Supports multiple levels of risk tolerance
+:::
+
+::: {.column width="50%"}
+DCF file forked from ``r-hub/repos``
+```{.yaml}
+Package: bslib
+Version: 0.6.1
+Depends: R (>= 2.10), R (>= 4.4), R (< 4.4.99)
+License: MIT + file LICENSE
+DownloadURL:
+         https://github.com/cran/bslib/releases/download/0.6.1/bslib_0.6.1_b4_R4.4_x86_64-pc-linux-gnu-ubuntu-22.04.tar.gz
+Built: R 4.4.0; ; 2023-11-29 16:39:06 UTC; unix
+RVersion: 4.4
+Platform: x86_64-pc-linux-gnu-ubuntu-22.04
+Imports: base64enc, cachem, grDevices, htmltools (>= 0.5.7), jquerylib (>= 0.1.3),
+         jsonlite, lifecycle, memoise (>= 2.0.1), mime, rlang, sass (>= 0.4.0)
+...
+```
+Added fields for risk-based assessment
+```{.yaml}
+riskmetric_run_date: 2023-06-21
+riskmetric_version: 0.2.1
+covr_coverage: 0.852
+has_vignettes: 1
+remote_checks: 0.846
+...
+```
+:::
+:::
+
+::: {.notes}
+Yann
+:::
+
+## Packages cohort validation workflow
+
+### Risk assessment pipeline
+
+
+:::: {.columns}
+::: { .column .center width="32%" }
+![](resources/package-inspect-svgrepo-com.svg){ width="50%" height="50%" }
+
+Calculates package QA metadata on updated packages and their reverse dependencies
+:::
+
+::: {.column .center width="32%"}
+![](resources/document-code-2-svgrepo-com.svg){ width="50%" height="50%" }
+
+Produces logs and other reproducibility data
+:::
+
+::: {.column .center width="32%"}
+![](resources/house-svgrepo-com.svg){ width="50%" height="50%" }
+
+In the future: can run on in-house infrastructure
+:::
+::::
+
+::: {.notes}
+Yann
+:::
+
+## Packages cohort validation workflow
+
+```{dot}
+digraph D {
+  node [shape=plaintext fontname="Sans serif" fontsize="30"];
+
+  pkg_1 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_1</b></td></tr>
+     <tr><td align="left">Version: 1.15</td></tr>
+     <tr><td align="left">covr_coverage: 0.967</td></tr>
+     <tr><td align="left">has_vignettes: 1</td></tr>
+   </table>>];
+   
+  pkg_2 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_2</b></td></tr>
+     <tr><td align="left">Version: 3.5</td></tr>
+     <tr><td align="left">covr_coverage: 0.984</td></tr>
+     <tr><td align="left">has_vignettes: 1</td></tr>
+   </table>>];
+   
+  pkg_3 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_3</b></td></tr>
+     <tr><td align="left">Version: 1.9</td></tr>
+     <tr><td align="left">covr_coverage: 0.992</td></tr>
+     <tr><td align="left">has_vignettes: 1</td></tr>
+   </table>>];
+   
+  pkg_4 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_4</b></td></tr>
+     <tr><td align="left">Version: 0.5</td></tr>
+     <tr><td align="left">covr_coverage: 0.864</td></tr>
+     <tr><td align="left">has_vignettes: 0</td></tr>
+   </table>>];
+   
+  pkg_5 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_5</b></td></tr>
+     <tr><td align="left">Version: 4.2</td></tr>
+     <tr><td align="left">covr_coverage: 0.924</td></tr>
+     <tr><td align="left">has_vignettes: 1</td></tr>
+   </table>>];
+
+  pkg_2 -> pkg_1;
+  pkg_3 -> pkg_1;
+  pkg_3 -> pkg_2;
+  pkg_5 -> pkg_4;
+}
+```
+
+::: {.notes}
+Yann
+:::
+
+## Packages cohort validation workflow
+
+```{dot}
+digraph D {
+  node [shape=plaintext fontname="Sans serif" fontsize="30"];
+
+  pkg_1 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_1</b></td></tr>
+     <tr><td align="left">Version: 1.15</td></tr>
+     <tr><td align="left">covr_coverage: <b><font color="darkgreen">...</font></b>      </td></tr>
+     <tr><td align="left">has_vignettes: <b><font color="darkgreen">...</font></b>      </td></tr>
+   </table>>];
+   
+  pkg_2 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_2</b></td></tr>
+     <tr><td align="left">Version: <b><font color="darkgreen">3.6</font></b></td></tr>
+     <tr><td align="left">covr_coverage: <b><font color="darkgreen">...</font></b>      </td></tr>
+     <tr><td align="left">has_vignettes: <b><font color="darkgreen">...</font></b>      </td></tr>
+   </table>>];
+   
+  pkg_3 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_3</b></td></tr>
+     <tr><td align="left">Version: 1.9</td></tr>
+     <tr><td align="left">covr_coverage: 0.992</td></tr>
+     <tr><td align="left">has_vignettes: 1</td></tr>
+   </table>>];
+   
+  pkg_4 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_4</b></td></tr>
+     <tr><td align="left">Version: 0.5</td></tr>
+     <tr><td align="left">covr_coverage: 0.864</td></tr>
+     <tr><td align="left">has_vignettes: 0</td></tr>
+   </table>>];
+   
+  pkg_5 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_5</b></td></tr>
+     <tr><td align="left">Version: 4.2</td></tr>
+     <tr><td align="left">covr_coverage: 0.924</td></tr>
+     <tr><td align="left">has_vignettes: 1</td></tr>
+   </table>>];
+
+  pkg_2 -> pkg_1;
+  pkg_3 -> pkg_1;
+  pkg_3 -> pkg_2;
+  pkg_5 -> pkg_4;
+}
+```
+
+::: {.notes}
+Yann
+:::
+
+## Packages cohort validation workflow
+
+```{dot}
+digraph D {
+  node [shape=plaintext fontname="Sans serif" fontsize="30"];
+
+  pkg_1 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_1</b></td></tr>
+     <tr><td align="left">Version: 1.15</td></tr>
+     <tr><td align="left">covr_coverage: <b><font color="darkgreen">0.967</font></b></td></tr>
+     <tr><td align="left">has_vignettes: <b><font color="darkgreen">1</font></b></td></tr>
+   </table>>];
+   
+  pkg_2 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_2</b></td></tr>
+     <tr><td align="left">Version: <b><font color="darkgreen">3.6</font></b></td></tr>
+     <tr><td align="left">covr_coverage: <b><font color="darkgreen">0.987</font></b></td></tr>
+     <tr><td align="left">has_vignettes: <b><font color="darkgreen">1</font></b></td></tr>
+   </table>>];
+   
+  pkg_3 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_3</b></td></tr>
+     <tr><td align="left">Version: 1.9</td></tr>
+     <tr><td align="left">covr_coverage: 0.992</td></tr>
+     <tr><td align="left">has_vignettes: 1</td></tr>
+   </table>>];
+   
+  pkg_4 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_4</b></td></tr>
+     <tr><td align="left">Version: 0.5</td></tr>
+     <tr><td align="left">covr_coverage: 0.864</td></tr>
+     <tr><td align="left">has_vignettes: 0</td></tr>
+   </table>>];
+   
+  pkg_5 [ label=<
+   <table border="1" cellborder="0" cellspacing="1">
+     <tr><td align="left"><b>pkg_5</b></td></tr>
+     <tr><td align="left">Version: 4.2</td></tr>
+     <tr><td align="left">covr_coverage: 0.924</td></tr>
+     <tr><td align="left">has_vignettes: 1</td></tr>
+   </table>>];
+
+  pkg_2 -> pkg_1;
+  pkg_3 -> pkg_1;
+  pkg_3 -> pkg_2;
+  pkg_5 -> pkg_4;
+}
+```
+
+::: {.notes}
+Yann
+:::
+
+# Our roadmap
+
+## What's next
+
+_Automating up-to-date quality metrics to support sponsor risk assessment_
+
+![](resources/next-steps.drawio.svg){ style='width: 100%; height: 100%; margin: 2em 0;' }
+
+## Reference container image(s)
+
+:::: {.columns}
+::: {.column .center width="32%"}
+![](resources/laptop-svgrepo-com.svg){ width="50%" height="50%" }
+
+Should mimic environments of companies and health authority reviewers
+:::
+
+::: {.column .center width="32%"}
+![](resources/settings-gear-svgrepo-com.svg){ width="50%" height="50%" }
+
+To be used by the Regulatory R Repository for packages cohort validation
+:::
+
+::: {.column .center width="32%"}
+![](resources/dialog-svgrepo-com.svg){ width="50%" height="50%" }
+
+Main intent: start a cross-company dialogue on infrastructure
+:::
+::::

@@ -31,8 +31,8 @@
 .panel {
   font-size: 0.6em;
   background: rgba(0.75, 0.75, 0.75, 0.1);
-  padding: 1%;
-  margin: 1%;
+  padding: 2%;
+  margin: 2%;
   border-radius: 0.5em;
   border-bottom: solid 0.2em rgba(1, 1, 1, 0.1);
 }
