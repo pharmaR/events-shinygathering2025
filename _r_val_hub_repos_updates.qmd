@@ -119,69 +119,160 @@ _focus on proving capabilities, quick development_
 ```r
 repo <- "https://raw.githubusercontent.com/pharmaR/repos/main/ubuntu-22.04/4.5"
 options(repos = c("pharmaR/repos/ubuntu" = repo))
-available.packages()
 ```
+:::
 
-::: { .incremental }
-```r
-options(
-  available_packages_filters = risk_filter(
+Define your quality expectations _in code_
+
+::: { style="font-size: 1.35em;" }
+```{.r code-line-numbers="2-3,5-8,10-12,14-17"}
+options(available_packages_filters = risk_filter(
+  # no known security vulnerabilities
+  quality_cve_count == 0 & (
+
     # package is exceptionally testing 
     (quality_code_coverage >= 0.8 & 
       quality_example_coverage >= 0.8 &
       quality_r_cmd_check_errors == 0) |
 
     # or is exceptionally well adopted
-    (percentile(quality_downloads_1yr) > 90 |
-      quality_reverse_dependencies_count >= 10) |
+    dplyr::percent_rank(quality_downloads_1yr) > 0.9 |
+    quality_reverse_dependencies_count >= 10 |
 
     # or seems to follow thorough development practices
     (quality_has_website &
       quality_vignette_count >= 1 &
       quality_author_count >= 3)
   )
-)
+))
 ```
-:::
 
 <small>\*aspirational deviations from proof of concept in [github.com/pharmaR/pharmapkgs]()</small>
 :::
 
-# Repository ‘back-end’
+## As a user*
 
-## Infrastructure setup
+::: { style="font-size: 1.35em;" }
+```r
+repo <- "https://raw.githubusercontent.com/pharmaR/repos/main/ubuntu-22.04/4.5"
+options(repos = c("pharmaR/repos/ubuntu" = repo))
+```
+:::
+
+Make exceptions _explicit_
+
+::: { style="font-size: 1.35em;" }
+```{.r code-line-numbers="2"}
+options(available_packages_filters = risk_filter(
+  exceptions = c("riskmetric", "riskscore"),
+
+  # no known security vulnerabilities
+  quality_cve_count == 0 & (
+
+    # package is exceptionally testing 
+    (quality_code_coverage >= 0.8 & 
+      quality_example_coverage >= 0.8 &
+      quality_r_cmd_check_errors == 0) |
+
+    # or is exceptionally well adopted
+    dplyr::percent_rank(quality_downloads_1yr) > 0.9 |
+    quality_reverse_dependencies_count >= 10 |
+
+    # or seems to follow thorough development practices
+    (quality_has_website &
+      quality_vignette_count >= 1 &
+      quality_author_count >= 3)
+  )
+))
+```
+
+<small>\*aspirational deviations from proof of concept in [github.com/pharmaR/pharmapkgs]()</small>
+:::
+
+## As a user*
+
+::: { style="font-size: 1.35em;" }
+```r
+repo <- "https://raw.githubusercontent.com/pharmaR/repos/main/ubuntu-22.04/4.5"
+options(repos = c("pharmaR/repos/ubuntu" = repo))
+```
+:::
+
+Tools for inspecting packages that do not adhere to pre-specified criteria
+
+::: { style="font-size: 1.35em;" }
+```{.r}
+risk_explain(package = "options")
+#> <criteria>
+#> * `quality_code_coverage` of `0.43` (< 0.8)
+#> * `dplyr::precent_risk(quality_downloads_1yr)` of `0.2` (< 0.9)
+#> * `quality_reverse_dependencies_count` of `0` (< 10)
+#> * `quality_author_count` of `1` (< 3)
+```
+
+<small>\*aspirational deviations from proof of concept in [github.com/pharmaR/pharmapkgs]()</small>
+:::
+
+## As an Administrator
+
+::: { style="font-size: 1.35em;" }
+```r
+repo <- "https://raw.githubusercontent.com/pharmaR/repos/main/ubuntu-22.04/4.5"
+options(repos = c("pharmaR/repos/ubuntu" = repo))
+```
+:::
+
+Applying filters to a repository mirror 
+
+::: { style="font-size: 1.35em;" }
+```{.r}
+options(available_packages_filters = risk_filter(
+  # define your criterion in code
+))
+
+packages <- available.packages()
+write.dcf(packages, "ORG_PACKAGES")
+# sync repo using PACKAGES file
+```
+:::
+
+# How it Works
+
+## Shamelessly Piggybacking on `r-hub/repos`
 
 ::: columns
-::: {.column width="50%"}
-- Hosts risk assessment metadata
-- Links to artifacts of the R-hub check system (via `DownloadURL`)
-- Integrates with `pak::pkg_install`
-- Supports multiple levels of risk tolerance
+::: { .incremental .column width="50%" }
+- `github.com/cran` mirrors CRAN packages, hosting source code & binary builds
+- `r-hub/repos` indexes packages mirrored on `github.com/cran`
+  - Adds a custom `DownloadUrl` field, used by `{pak}` to fetch packages
+  - Serves `PACKAGES` file, a standard format for indexing packages
+- `pharmaR/repos` periodically looks for changes in `r-hub/repos`
+  - Calculates metrics for updated packages
+  - And hosts `PACKAGES` file with additional quality fields
 :::
 
 ::: {.column width="50%"}
-DCF file forked from ``r-hub/repos``
-```{.yaml}
+
+`r-hub/repos` `PACKAGES` file
+
+```{.yaml code-line-numbers="5-6"}
 Package: bslib
 Version: 0.6.1
 Depends: R (>= 2.10), R (>= 4.4), R (< 4.4.99)
 License: MIT + file LICENSE
 DownloadURL:
-         https://github.com/cran/bslib/releases/download/0.6.1/bslib_0.6.1_b4_R4.4_x86_64-pc-linux-gnu-ubuntu-22.04.tar.gz
-Built: R 4.4.0; ; 2023-11-29 16:39:06 UTC; unix
-RVersion: 4.4
-Platform: x86_64-pc-linux-gnu-ubuntu-22.04
-Imports: base64enc, cachem, grDevices, htmltools (>= 0.5.7), jquerylib (>= 0.1.3),
-         jsonlite, lifecycle, memoise (>= 2.0.1), mime, rlang, sass (>= 0.4.0)
+  https://github.com/cran/bslib/../bslib-ubuntu-22.04.tar.gz
 ...
 ```
+
 Added fields for risk-based assessment
+
 ```{.yaml}
 riskmetric_run_date: 2023-06-21
 riskmetric_version: 0.2.1
-covr_coverage: 0.852
-has_vignettes: 1
-remote_checks: 0.846
+quality_code_coverage: 0.852
+quality_vignettes_count: 1
+quality_r_cmd_check_errors: 0
 ...
 ```
 :::
@@ -191,205 +282,35 @@ remote_checks: 0.846
 Yann
 :::
 
-## Packages cohort validation workflow
+## Package Validation Workflow
 
 ### Risk assessment pipeline
 
-
 :::: {.columns}
 ::: { .column .center width="32%" }
-![](resources/package-inspect-svgrepo-com.svg){ width="50%" height="50%" }
+<div style="filter: grayscale() brightness(150%) contrast(30%) sepia() saturate(300%) hue-rotate(2.9rad);">
+![](resources/package-inspect-svgrepo-com.svg){width="50%" height="50%"}
+</div>
 
-Calculates package QA metadata on updated packages and their reverse dependencies
+Calculates package quality metadata on for updated packages and reverse dependencies
 :::
 
 ::: {.column .center width="32%"}
+<div style="filter: contrast(10%) sepia() saturate(1000%) hue-rotate(3.3rad);">
 ![](resources/document-code-2-svgrepo-com.svg){ width="50%" height="50%" }
+</div>
 
-Produces logs and other reproducibility data
+Produces logs and necessary reporting metadata
 :::
 
 ::: {.column .center width="32%"}
+<div style="filter: contrast(10%) sepia() saturate(1000%) hue-rotate(3.3rad);">
 ![](resources/house-svgrepo-com.svg){ width="50%" height="50%" }
+</div>
 
-In the future: can run on in-house infrastructure
+Support in-house packages with open-source tooling
 :::
 ::::
-
-::: {.notes}
-Yann
-:::
-
-## Packages cohort validation workflow
-
-```{dot}
-digraph D {
-  node [shape=plaintext fontname="Sans serif" fontsize="30"];
-
-  pkg_1 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_1</b></td></tr>
-     <tr><td align="left">Version: 1.15</td></tr>
-     <tr><td align="left">covr_coverage: 0.967</td></tr>
-     <tr><td align="left">has_vignettes: 1</td></tr>
-   </table>>];
-   
-  pkg_2 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_2</b></td></tr>
-     <tr><td align="left">Version: 3.5</td></tr>
-     <tr><td align="left">covr_coverage: 0.984</td></tr>
-     <tr><td align="left">has_vignettes: 1</td></tr>
-   </table>>];
-   
-  pkg_3 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_3</b></td></tr>
-     <tr><td align="left">Version: 1.9</td></tr>
-     <tr><td align="left">covr_coverage: 0.992</td></tr>
-     <tr><td align="left">has_vignettes: 1</td></tr>
-   </table>>];
-   
-  pkg_4 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_4</b></td></tr>
-     <tr><td align="left">Version: 0.5</td></tr>
-     <tr><td align="left">covr_coverage: 0.864</td></tr>
-     <tr><td align="left">has_vignettes: 0</td></tr>
-   </table>>];
-   
-  pkg_5 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_5</b></td></tr>
-     <tr><td align="left">Version: 4.2</td></tr>
-     <tr><td align="left">covr_coverage: 0.924</td></tr>
-     <tr><td align="left">has_vignettes: 1</td></tr>
-   </table>>];
-
-  pkg_2 -> pkg_1;
-  pkg_3 -> pkg_1;
-  pkg_3 -> pkg_2;
-  pkg_5 -> pkg_4;
-}
-```
-
-::: {.notes}
-Yann
-:::
-
-## Packages cohort validation workflow
-
-```{dot}
-digraph D {
-  node [shape=plaintext fontname="Sans serif" fontsize="30"];
-
-  pkg_1 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_1</b></td></tr>
-     <tr><td align="left">Version: 1.15</td></tr>
-     <tr><td align="left">covr_coverage: <b><font color="darkgreen">...</font></b>      </td></tr>
-     <tr><td align="left">has_vignettes: <b><font color="darkgreen">...</font></b>      </td></tr>
-   </table>>];
-   
-  pkg_2 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_2</b></td></tr>
-     <tr><td align="left">Version: <b><font color="darkgreen">3.6</font></b></td></tr>
-     <tr><td align="left">covr_coverage: <b><font color="darkgreen">...</font></b>      </td></tr>
-     <tr><td align="left">has_vignettes: <b><font color="darkgreen">...</font></b>      </td></tr>
-   </table>>];
-   
-  pkg_3 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_3</b></td></tr>
-     <tr><td align="left">Version: 1.9</td></tr>
-     <tr><td align="left">covr_coverage: 0.992</td></tr>
-     <tr><td align="left">has_vignettes: 1</td></tr>
-   </table>>];
-   
-  pkg_4 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_4</b></td></tr>
-     <tr><td align="left">Version: 0.5</td></tr>
-     <tr><td align="left">covr_coverage: 0.864</td></tr>
-     <tr><td align="left">has_vignettes: 0</td></tr>
-   </table>>];
-   
-  pkg_5 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_5</b></td></tr>
-     <tr><td align="left">Version: 4.2</td></tr>
-     <tr><td align="left">covr_coverage: 0.924</td></tr>
-     <tr><td align="left">has_vignettes: 1</td></tr>
-   </table>>];
-
-  pkg_2 -> pkg_1;
-  pkg_3 -> pkg_1;
-  pkg_3 -> pkg_2;
-  pkg_5 -> pkg_4;
-}
-```
-
-::: {.notes}
-Yann
-:::
-
-## Packages cohort validation workflow
-
-```{dot}
-digraph D {
-  node [shape=plaintext fontname="Sans serif" fontsize="30"];
-
-  pkg_1 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_1</b></td></tr>
-     <tr><td align="left">Version: 1.15</td></tr>
-     <tr><td align="left">covr_coverage: <b><font color="darkgreen">0.967</font></b></td></tr>
-     <tr><td align="left">has_vignettes: <b><font color="darkgreen">1</font></b></td></tr>
-   </table>>];
-   
-  pkg_2 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_2</b></td></tr>
-     <tr><td align="left">Version: <b><font color="darkgreen">3.6</font></b></td></tr>
-     <tr><td align="left">covr_coverage: <b><font color="darkgreen">0.987</font></b></td></tr>
-     <tr><td align="left">has_vignettes: <b><font color="darkgreen">1</font></b></td></tr>
-   </table>>];
-   
-  pkg_3 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_3</b></td></tr>
-     <tr><td align="left">Version: 1.9</td></tr>
-     <tr><td align="left">covr_coverage: 0.992</td></tr>
-     <tr><td align="left">has_vignettes: 1</td></tr>
-   </table>>];
-   
-  pkg_4 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_4</b></td></tr>
-     <tr><td align="left">Version: 0.5</td></tr>
-     <tr><td align="left">covr_coverage: 0.864</td></tr>
-     <tr><td align="left">has_vignettes: 0</td></tr>
-   </table>>];
-   
-  pkg_5 [ label=<
-   <table border="1" cellborder="0" cellspacing="1">
-     <tr><td align="left"><b>pkg_5</b></td></tr>
-     <tr><td align="left">Version: 4.2</td></tr>
-     <tr><td align="left">covr_coverage: 0.924</td></tr>
-     <tr><td align="left">has_vignettes: 1</td></tr>
-   </table>>];
-
-  pkg_2 -> pkg_1;
-  pkg_3 -> pkg_1;
-  pkg_3 -> pkg_2;
-  pkg_5 -> pkg_4;
-}
-```
-
-::: {.notes}
-Yann
-:::
 
 # Our roadmap
 
@@ -403,20 +324,35 @@ _Automating up-to-date quality metrics to support sponsor risk assessment_
 
 :::: {.columns}
 ::: {.column .center width="32%"}
+<div style="filter: grayscale() contrast(50%) brightness(80%) sepia() saturate(1000%) hue-rotate(3.3rad);">
 ![](resources/laptop-svgrepo-com.svg){ width="50%" height="50%" }
+</div>
 
-Should mimic environments of companies and health authority reviewers
+### Baseline Compute
+
+* Transparent system configuration
+* Declarative builds
 :::
 
 ::: {.column .center width="32%"}
+<div style="filter: grayscale() contrast(50%) brightness(80%) sepia() saturate(1000%) hue-rotate(3.3rad);">
 ![](resources/settings-gear-svgrepo-com.svg){ width="50%" height="50%" }
+</div>
 
-To be used by the Regulatory R Repository for packages cohort validation
+### Reproducible metrics
+
+* Informed decisions on system-generalizability
+* Tools can be re-applied to other platforms
 :::
 
 ::: {.column .center width="32%"}
+<div style="filter: grayscale() contrast(50%) brightness(80%) sepia() saturate(1000%) hue-rotate(3.3rad);">
 ![](resources/dialog-svgrepo-com.svg){ width="50%" height="50%" }
+</div>
 
-Main intent: start a cross-company dialogue on infrastructure
+### Sparking Dialogue
+
+* Consensus base images
+* Health authority container adoption..
 :::
 ::::

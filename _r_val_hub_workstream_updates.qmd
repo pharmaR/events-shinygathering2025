@@ -61,7 +61,6 @@ Insert Image TODO
 
 # ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
-
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 ### Latest Features Recap
@@ -71,13 +70,11 @@ Insert Image TODO
 * Expanded the package dependency view
 * Miscellaneous items
   * `About` tab
-  * non-`shinymanager` deployment
-  
+  * non-`shinymanager` deployment 
   
   The feedback loop is crucial! All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
   
-  
-  ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 ### Test drive now
 TODO: add link and icon for small car

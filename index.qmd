@@ -23,7 +23,6 @@ Keep your hand raised if...
 - [Your org uses ***R Validation Hub*** tools (`{riskmetric}`, `{riskassessment}`)]{.fragment .semi-fade-out}
 ::::
 
-
 # 🗓️  Agenda
 
 ```{=html}
