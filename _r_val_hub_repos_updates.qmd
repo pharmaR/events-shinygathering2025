@@ -94,69 +94,57 @@ _focus on proving capabilities, quick development_
 
 ![](resources/pilot.drawio.svg){ style='width: 100%; height: 100%; margin: 2em 0;' }
 
+✨ _all modelled after [r-hub/repos](https://github.com/r-hub/repos)_
+
 # Interacting with the repo
 
 ## Packages risk filters
 
-::: columns
+::: { .columns }
 ::: {.column width="50%"}
-
 - Helper package for system administrators
 - Restricts packages available for installation to those fitting a policy
 - Uses packages metadata in the repo
 - May be used together with manual checks (e.g., read a statistical review)
 :::
+
 ::: {.column width="50%"}
-```{mermaid}
-flowchart TD
-  A[All packages] --> B{Code\n covr.\n > 95%?}
-  B -- Yes --> C{Has\n doc.?}
-  C -- Yes --> D(Available for safety-critical activities)
-```
+![](resources/package-filters.drawio.svg){ width="100%" height="13em" }
 :::
 :::
 
-## Usage
+## As a user*
 
-```{r}
-#| echo: false
-summarize_available_packages <- function(ap) {
-  out <- cbind(ap, data.frame("..." = "..."))
-  out <- out[c(1:4, nrow(ap)), c("Package", "...")]
-  out[4,] <- c("...", "...")
-  rownames(out) <- c("1", "2", "3", "...", nrow(ap))
-  out
-}
-```
-
-::: columns
-::: {.column width="50%"}
-### Unfiltered
-
-```{=r}
+::: { style="font-size: 1.35em;" }
+```r
+repo <- "https://raw.githubusercontent.com/pharmaR/repos/main/ubuntu-22.04/4.5"
+options(repos = c("pharmaR/repos/ubuntu" = repo))
 available.packages()
 ```
-```{=r}
-pkgs_nofltr_path <- file.path(here::here(), "resources", "pkgs_nofltr.rds")
-pkgs_nofltr <- readRDS(file = pkgs_nofltr_path)
-summarize_available_packages(pkgs_nofltr)
+
+::: { .incremental }
+```r
+options(
+  available_packages_filters = risk_filter(
+    # package is exceptionally testing 
+    (quality_code_coverage >= 0.8 & 
+      quality_example_coverage >= 0.8 &
+      quality_r_cmd_check_errors == 0) |
+
+    # or is exceptionally well adopted
+    (percentile(quality_downloads_1yr) > 90 |
+      quality_reverse_dependencies_count >= 10) |
+
+    # or seems to follow thorough development practices
+    (quality_has_website &
+      quality_vignette_count >= 1 &
+      quality_author_count >= 3)
+  )
+)
 ```
 :::
 
-::: {.column width="50%"}
-### Filtered
-```{=r}
-fltr <- risk_filter(covr_coverage > 0.95
-  & has_vignettes)
-options(available_packages_filters = fltr)
-available.packages()
-```
-```{=r}
-pkgs_fltr_path <- file.path(here::here(), "resources", "pkgs_fltr.rds")
-pkgs_fltr <- readRDS(file = pkgs_fltr_path)
-summarize_available_packages(pkgs_fltr)
-```
-:::
+<small>\*aspirational deviations from proof of concept in [github.com/pharmaR/pharmapkgs]()</small>
 :::
 
 # Repository ‘back-end’
