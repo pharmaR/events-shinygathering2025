@@ -15,56 +15,31 @@
 [^esub]: [R Consortium R Submission WG, Pilot #1](https://github.com/RConsortium/submissions-pilot1)
 [^csa]: [_Computer Software Assurance for Production and Quality Systems Software: Draft Guidance for Industry and Food and Drug Administration Staff_](https://www.fda.gov/media/161521/download)
 
-
-
 # 📣 Communications Workstream
 
-## [Case Studies](https://www.pharmar.org/casestudies/)
-> 7 Companies Shared their Approach to Package Validation in 2022
+## Community Meetings 🗓 TODO add cal icon
 
-<br>
+### In the last year...
+- May 21, 2024 - *Tackling Hurdles: Embracing Open-Source Packages in Projects* ([GitHub](https://github.com/pharmaR/events/tree/main/community_meetings/2024-05-21)/[slides](https://github.com/pharmaR/events/blob/main/community_meetings/2024-05-21/RvalHub_2024May_Community_meeting.pdf/[notes](https://github.com/pharmaR/events/blob/main/community_meetings/2024-05-21/21MAY2024_community_meeting_notes.md))
+- February 03, 2024 - *Unraveling the Term “Validation”* ([GitHub](https://github.com/pharmaR/events/tree/main/community_meetings/2024-02-20)/[slides](https://github.com/pharmaR/events/blob/main/community_meetings/2024-02-20/RvalHub_2024Feb_Community_meeting.pdf)/[notes](https://github.com/pharmaR/events/blob/main/community_meetings/2024-02-20/RvalHub_2024Feb_Community_meeting_notes.txt))
+- November 28, 2023 - *Wrapping Up 2023 and Welcoming 2024* ([slides](https://docs.google.com/presentation/d/1iq2HzcjVYGnR5sf-rgLZzxnGwMnrDlJJNJmziwfX3j0/edit#slide=id.g1e185ace86d_0_153)/[recording](https://www.youtube.com/watch?v=_r5x-baN76E&t=3s))
+- August 09, 2023 - *Risk Metric Application and Risk Score – A 2-part Mini Series* ([GitHub](https://github.com/pharmaR/events/tree/main/community_meetings/2023-08-09_riskmetric_riskassessment_series))
+- June 27, 2023 - *Learnings & Reflections from Case Studies* ([GitHub](https://github.com/pharmaR/events/tree/main/community_meetings/2023-06-27)/[slides](https://github.com/pharmaR/events/blob/main/community_meetings/2023-06-27/community_mtg_6_27_2023.pdf))
 
-:::: {.columns style="font-size: 1.0em;"}
-::: {.column width="33%"}
-#### Commonalities
-
-- Categorized risk (hi/med/lo)
-- Heavily weight unit testing
-- Base & Suggested packages "trusted"
-:::
-
-::: {.column width="33%"}
-#### Differences
-
-- Risk stratification (eg coverage cutoff)
-- Managing risk
-  - human-in-the-middle review 
-  - restricted package subset
-  - adding bespoke testing
-:::
-
-::: {.column width="33%"}
-#### Themes
-
-- Time & resource intensive
-- Requires unique intersection of expertise
-- **Challenges of lifecycle management of ecosystem**
-:::
-::::
+### How do I sign up?
+- Join our [mailing list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)! TODO: add icon
+- Follow the [R Consortium's Linkedin](https://www.linkedin.com/company/r-consortium/posts/) TODO: add icon
 
 
-
-
-
-## Community Meetings
+## Our Next Community Meeting
 
 - Next date: 🗓️ Aug 20, 2024
 
-- Speaker: 👷‍♂️ Bríd Roberts, Novartis [how do I change this icon to female?]
+- Speaker: 👷‍♂️ Bríd Roberts, Novartis [TODO: how do I change this icon to female?]
 
 - Topic:
 
-### Measuring change in assessed risk across package releases 
+### Analyzing change in assessed risk across package releases 
 
 > The Software Open Source (SOS) team manages and executes the risk assessment process for R package validation at Novartis. The team uses an internally developed R package to classify the risk of each package as "low", "medium", or "high".
 > 
@@ -73,33 +48,64 @@
 > In this talk, we showcase the risk assessments over time, the causes of any risk class changes, and  their impact on various teams within our organizations as a result.
 
 
+## Website Refresh
+
+Then:
+Outdated, clumsy, hard to navigate...
+Insert Image TODO
+
+Now:
+Update, streamlined, user friendly!
+Insert Image TODO
 
 
-# ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App Workstream
+# ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
-### Feature Recap
+### Latest Features Recap
 
-- Face lifts for _Report Builder_ & _Database View_
-- Better dependency inspection
-- Org-level customizations using config file
-- Allow `admin` user role management
-- Package file explorer
+* Expanded decision automation to include individual {riskmetric} assessment values
+* New `Function Explorer` page and faster exploration of source code
+* Expanded the package dependency view
+* Miscellaneous items
+  * `About` tab
+  * non-`shinymanager` deployment
+  
+  
+  The feedback loop is crucial! All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
+  
+  
+  ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
+
+### Test drive now
+TODO: add link and icon for small car
+
+https://app.pharmar.org/riskassessment/
+
+Looking for Volunteer "Leads" to represent
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
-#### New Test explorer! (Code provided by _GSK_)
+### Decision Automation Rules, by metric assessment
 
-![](resources/riskassessment-file-browser.png){.r-stretch .center style="display: block; margin: auto;"}
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
+### New Function Explorer! (Code provided by _GSK_)
 
+![](resources/riskassessment-function-explorer.png){.r-stretch .center style="display: block; margin: auto;"}
 
-# ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Workstream
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
+### Package Dependency Integration
+
+# ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}`
 
 ## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Roadmap
+
+### Big changes
+Running from risk scores & focusing solely on metric assessments
 
 ::: { style="font-size:0.8em" }
 - **Ease of use:**  
@@ -107,7 +113,7 @@
 - **Metric completeness:**  
   Implement metrics for as many pacakge sources as possible. Chain sources 
   together to create more complete assessments
-- **Modular addititions:**  
+- **Modular additions:**  
   Allow users to easy add custom assessments, create optional assessments 
   based on community packages (e.g. `oyster`, `srr`, `pkgstats`, etc)
 - **Focusing on metrics and scoring:**  
@@ -115,3 +121,4 @@
   weighting specific assessments based on community feedback and our own views 
   on best practices.
 :::
+
