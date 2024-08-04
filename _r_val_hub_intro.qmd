@@ -53,85 +53,13 @@
 
 
 
-
-
-## 🤝 Affiliates: ![](resources/r-consortium.png){height="1.2em" style="padding: 0.2em; margin: 0 0.5em 0 0; border-radius: 0.8em; background: #FFF; vertical-align: middle;"} [R Consortium]{.hidden} {transition="slide-in slide-out"}
-
-::: {style="font-size: 1.0em"}
-> Works with and provides support to the R Foundation and to the key
-> organizations developing, maintaining, distributing and using R software
-:::
-
-<br>
-
-### Key Activities
-
-* The R Validation Hub
-* R Submission Working Group
-* R Repositories Working Group (ie CRAN enhancements, future development)
+{{< include _r_consortium.qmd >}}
 
 
 
-
-
-
-## 🤝 Affiliates: ![](resources/camis.png){height="1.2em" width="1.2em" style="margin: 0 0.2em; border-radius: 50%; object-fit: cover; background: #CBC; vertical-align: middle;"} PSI/AIMS (CAMIS) {transition="slide-in slide-out"}
-
-::::: {.columns}
-:::: {.column width="65%"}
-::: { style="font-size: 0.8em;" }
-> **C**omparing **A**nalysis **M**ethod **I**mplementations in **S**oftware  
-> A cross-industry group formed of members from PHUSE, PSI, and ASA.
-:::
-
-::: { style="font-size: 1.0em;" }
-- Released a [white paper](https://phuse.s3.eu-central-1.amazonaws.com/Deliverables/Data+Visualisation+%26+Open+Source+Technology/WP077.pdf) providing guidance on appropriate use of stats methods, for example:
-  * Don't default to the defaults
-  * Be specific when drafting analysis plans, including precise methods & options
-- A resource for knowing the details of methods across languages
-:::
-::::
-
-:::: {.column width="35%"}
-![](resources/CAMIS-white-paper.png)
-::::
-:::::
-
-
-
-
-
-## 🤝 Affiliates: ![](resources/camis.png){height="1.2em" width="1.2em" style="margin: 0 0.2em; border-radius: 50%; object-fit: cover; background: #CBC; vertical-align: middle;"} PSI/AIMS (CAMIS) {transition="slide-in slide-out"}
-
-::: {style="font-size: 1.0em"}  
-- Currently building a repository of methods comparisons at 
-  [psiaims.github.io/CAMIS](https://psiaims.github.io/CAMIS/).
-- Check out their 
-  [contributors page](https://psiaims.github.io/CAMIS/contribution.html) to 
-  learn how you can get involved!
-  
-<br>
-
-| Methods            |                    | R   | SAS | Comparison |
-| ------------------ | ------------------ | --- | --- | -----------|
-| Summary Statistics | Rounding           | [`R`](https://psiaims.github.io/CAMIS/R/rounding.html) | [`SAS`](https://psiaims.github.io/CAMIS/SAS/rounding.html) | [`R` vs `SAS`](https://psiaims.github.io/CAMIS/Comp/r-sas_rounding.html) |
-|                    | Summary Statistics | [`R`](https://psiaims.github.io/CAMIS/R/summary-stats.html) | [`SAS`](https://psiaims.github.io/CAMIS/SAS/summary-stats.html) | [`R` vs `SAS`](https://psiaims.github.io/CAMIS/Comp/r-sas-summary-stats.html) |
-| ... | ... | ... | ... | ... |
-
-: [CAMIS Comparisons Resources](https://psiaims.github.io/CAMIS/)
-
-:::
-
-
-
-
-
-
-
-## 👷‍♂️ What We Do {transition="slide-in slide-out"}
+## 👷‍♂️ The R Validation Hub: What We Do {transition="slide-in slide-out"}
 
 - Visit [pharmaR.org](https://www.pharmaR.org) to get involved!
-
 
 ### Products {.center}
 

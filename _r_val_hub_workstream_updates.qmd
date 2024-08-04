@@ -1,9 +1,21 @@
 # 📜 Workstream Updates {transition="slide-in none"}
 
+## 🗝 Key Policy Updates!
 
+- R Submissions Working group Pioneering use of Containers for delivering
+  study analysis with positive health authority feedback.[^pharmasug]
+
+### Reminder: News within the last year
+  
+- The FDA appears to accept `.R` files through their eSUB portal[^esub].
+- The FDA has released a draft of a new _Computer Software Assurance[^csa]_ guideline
+  that seems to be increasingly the basis for their evaluation of R.
+
+[^pharmasug]: [PharmaSUG 2024 #SS-376](https://www.pharmasug.org/us/2024/papers.html#SS-376)
+[^esub]: [R Consortium R Submission WG, Pilot #1](https://github.com/RConsortium/submissions-pilot1)
+[^csa]: [_Computer Software Assurance for Production and Quality Systems Software: Draft Guidance for Industry and Food and Drug Administration Staff_](https://www.fda.gov/media/161521/download)
 
 # 📣 Communications Workstream
-
 
 ## Community Meetings 🗓 TODO add cal icon
 
@@ -17,7 +29,6 @@
 ### How do I sign up?
 - Join our [mailing list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)! TODO: add icon
 - Follow the [R Consortium's Linkedin](https://www.linkedin.com/company/r-consortium/posts/) TODO: add icon
-
 
 
 ## Our Next Community Meeting
@@ -35,7 +46,6 @@
 > We analysed the risk assessment data over two time points to determine the impact on the assigned risk categorisation for packages with AND without version changes. 
 > 
 > In this talk, we showcase the risk assessments over time, the causes of any risk class changes, and  their impact on various teams within our organizations as a result.
-
 
 
 ## Website Refresh
@@ -57,13 +67,7 @@ Insert Image TODO
 
 
 
-
-
-
 # ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
-
-
-
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
@@ -74,16 +78,10 @@ Insert Image TODO
 * Expanded the package dependency view
 * Miscellaneous items
   * `About` tab
-  * non-`shinymanager` deployment
-
-
-The feedback loop is crucial! All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
-
-
-
-
-
-
+  * non-`shinymanager` deployment 
+  
+  The feedback loop is crucial! All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
+  
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 ### Test drive now
@@ -93,16 +91,9 @@ https://app.pharmar.org/riskassessment/
 
 Looking for Volunteer "Leads" to represent
 
-
-
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 ### Decision Automation Rules, by metric assessment
-
-
-
-
-
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
@@ -110,21 +101,11 @@ Looking for Volunteer "Leads" to represent
 
 ![](resources/riskassessment-function-explorer.png){.r-stretch .center style="display: block; margin: auto;"}
 
-
-
-
-
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 ### Package Dependency Integration
 
-
-
-
-
-
 # ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}`
-
 
 ## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Roadmap
 
@@ -145,11 +126,4 @@ Running from risk scores & focusing solely on metric assessments
   weighting specific assessments based on community feedback and our own views 
   on best practices.
 :::
-
-
-
-
-
-
-
 

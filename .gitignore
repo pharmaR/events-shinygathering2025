@@ -1,3 +1,5 @@
+# @dgkf uses a local cache to build in a container... don't let him commit it!
+_tmp
 /.quarto/
 *.html
 .Rproj.user
