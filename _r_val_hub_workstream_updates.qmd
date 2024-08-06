@@ -17,9 +17,14 @@
 
 # 📣 Communications Workstream
 
-## Community Meetings 📆
+- 📞 Community Meetings
+- 🚧 Website Revamp
+- 📜 Case Studies Refresh
+- 🆕 Gathering GxP Package Lists
 
-### Past meetups...
+## 📞 Community Meetings
+
+### Past meetups 📆
 
 - Jun 27, 2023 - *Learnings & Reflections from Case Studies* 
 - Aug 09, 2023 - *{riskmetric} & the {riskassessment} app – A 2-part Mini Series* 
@@ -34,13 +39,13 @@
 - Follow the [R Consortium's Linkedin](https://www.linkedin.com/company/r-consortium/posts/)
 
 
-## Our Next Community Meeting
+## 📞 Next Community Meeting
 
 
 :::: {.columns}
 
 ::: {.column width="30%"}
-![](resources/brid_roberts.jpg){height="7.4em" style="margin-left:50px"}
+![](resources/brid_roberts.jpg){height="7.4em" style="margin-left:50px;"}
 :::
 ::: {.column width="45%"}
 
@@ -63,26 +68,35 @@
 > 
 > In this talk, we showcase the risk assessments over time, the causes of any risk class changes, and  their impact on various teams within our organizations as a result.
 
+# 🚧 Website Refresh
+[pharmaR.org](https://www.pharmar.org/)
 
-## Website Refresh: Then
+
+## `pharmaR.org` THEN
 
 ![](resources/website-old.png)
 
 
-## Website Refresh: Now
+## `pharmaR.org` NOW
 
-![](resources/website-new.png)
-
-
-## Case Studies Refresh
+![](resources/website-new.png){style="border-color:black; border-style:solid; border-width:5px;"}
 
 
+## 📜 Case Studies Refresh
 
-## Gathering Package Lists
+![](resources/website-case-studies.png){style="border-color:black; border-style:solid; border-width:5px;"}
+
+
+## 🆕 Gathering GxP Package Lists
 
 
 
 # ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
+
+- ⏰ Latest features 
+- 🆕 New Collaborative Deployment
+- 🛣️ Where we're headed next
+
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
@@ -97,8 +111,8 @@ The feedback loop is crucial! All of these improvements started off as community
   
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
-### Test drive now
-TODO: add link and icon for small car
+### 🆕 New Collaborative Deployment
+
 
 https://app.pharmar.org/riskassessment/
 
