@@ -98,6 +98,8 @@
 - 🛣️ Where we're headed next
 
 
+
+
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 ### Latest Features Recap
@@ -107,37 +109,52 @@
 * Expanded the package dependency view
 * Miscellaneous items
   
-The feedback loop is crucial! All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
+### 📣 The feedback loop is crucial!
+All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
+  
+  
+  
   
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 ### 🆕 New Collaborative Deployment
 
+[https://app.pharmar.org/riskassessment/](https://app.pharmar.org/riskassessment/)
 
-https://app.pharmar.org/riskassessment/
+Call for volunteer "Leads"
+Big thanks to ProCogia TODO: insert logo
 
-Looking for Volunteer "Leads" to represent
 
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
+
+
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App Enhancement
 
 ### Decision Automation Rules, by metric assessment
 
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App Enhancement
 
 ### New Function Explorer! (Code provided by _GSK_)
 
-![](resources/riskassessment-function-explorer.png){.r-stretch .center style="display: block; margin: auto;"}
 
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App Enhancement
 
 ### Package Dependency Integration
 
+
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` Roadmap
+
+### 💯 Optional: going scoreless
+
+todo: provide details from that open issue
+
+
+
+
 # ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}`
+- Recap last year's priorities
+- 🥅 New Roadmap
 
-## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Roadmap
-
-### Big changes
-Running from risk scores & focusing solely on metric assessments
+## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Recap
 
 ::: { style="font-size:0.8em" }
 - **Ease of use:**  
@@ -153,4 +170,17 @@ Running from risk scores & focusing solely on metric assessments
   weighting specific assessments based on community feedback and our own views 
   on best practices.
 :::
+
+## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Roadmap
+
+![](resources/riskmetric-gov-1.png){height="18em" style="margin-left:50px"}
+
+## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Roadmap
+
+![](resources/riskmetric-gov-2.png){height="18em"}
+
+## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Roadmap
+
+![](resources/riskmetric-gov-3.png){height="18em"}
+
 
