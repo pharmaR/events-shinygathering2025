@@ -10,3 +10,5 @@ format:
     mermaid:
       theme: default
     slide-number: true
+    css: style.css
+

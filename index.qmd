@@ -25,21 +25,6 @@ Keep your hand raised if...
 
 # 🗓️  Agenda
 
-```{=html}
-<style>
-.dim {
-  font-style: italic;
-  font-weight: bold;
-  opacity: 0.35;  
-  margin: 0 0.5em;
-}
-
-.small {
-  font-size: 0.8em;
-}
-</style>
-```
-
 - Communications Workstream [5min]{.dim}
 - `{riskassessment}` App Workstream [5min]{.dim}
 - `{riskmetric}` workstream [10min]{.dim}  
@@ -54,33 +39,33 @@ Keep your hand raised if...
 
 # Closing
 
+## The Year Ahead
+
+### Upcoming Deliverables
+
+* `{riskmetric}` refocused on qualities, not scores
+* Enterprise package cohorts
+* Repositories pipelines
+
+### Key Opportunties
+
+* 📈 **`{riskmetric}` and/or `{riskassessment}` project manager**  
+  milestone planning, sprint organizing, issue triage, stakeholder management
+* 📦 **R package Development Opportunities**  
+  `{riskmetric}`/`{riskassessment}`/`{pharmapkgs}`
+* 🚀 **Infrastructure Development Opportunities**  
+  GitHub workflows for metrics calculations, repository management
+
 ## Thank you
 
-### To our Core Team members
+::: { .center style="color: #444; font-size: 2em; padding: 1.2em 2em;" }
+**thank you to our many contributors**
 
-::: { .columns }
-::: { .column style="font-size: 0.85em; width: 30%;" }
-* Coline Zeballos, <em>Roche</em>
-* Doug Kelkhoff, <em>Roche</em>
-* Jaime Pires, <em>Roche</em>
-* Yann Féat, <em>mainanalytics</em>
-* Andrew Borgman, <em>Biogen</em>
-* Astrid Radermacher, <em>Jumping Rivers</em>
-* Colin Gillespie, <em>Jumping Rivers</em>
-:::
-::: { .column style="font-size: 0.85em; width: 30%;" }
-* Magnus Mengelbier, <em>Limelogic</em>
-* Nicoles Jones, <em>Denali Therapeutics</em>
-* Ramiro Magno, <em>Pattern Institute</em>
-* Stefan Doering, <em>Boehringer-Ingelheim</em>
-* Kevin Kunzmann, <em>Boehringer-Ingelheim</em>
-:::
-::: { .column style="font-size: 0.85em; width: 30%;" }
-* Matthias Trampisch, <em>Boehringer-Ingelheim</em>
-* Wilmar Igl, <em>Icon Plc</em>
-* Lluís Revilla, <em>IrsiCaixa AIDS Research Institute</em>
-* Yoni Sidi, <em>Pinpoint Strategies</em>
-* Zhenglei Gao, <em>Bayer</em>
-:::
+_our work is the product of the donated time of many passionate individuals_
 :::
 
+::: { style="float: right;" }
+::: { style="background: white; padding: 0.2em 1em; box-shadow: 0 0.15em 0.5em #0004; border-radius: 2em;" }
+_slides at [pharmar.github.io/events-positconf2024]()_
+:::
+:::
