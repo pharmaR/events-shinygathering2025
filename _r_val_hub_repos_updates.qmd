@@ -54,7 +54,7 @@
 
 > In close communication with many beloved R projects
 
-:::{ .columns }
+:::{ .columns .font-size-small }
 :::{ .column .center .panel width="25%" }
 ![](resources/rc-logo.png)
 
