@@ -1,46 +1,5 @@
 # 👋 Who We Are {transition="none-in slide-out"}
 
-```{=html}
-<style>
-.panel {
-  font-size: 0.6em;
-  background: rgba(0.75, 0.75, 0.75, 0.1);
-  padding: 1%;
-  margin: 1%;
-  border-radius: 0.5em;
-  border-bottom: solid 0.2em rgba(1, 1, 1, 0.1);
-}
-
-.center {
-  --r-heading-margin: auto;
-  width: fit-content;
-}
-
-.person {
-  font-weight: bold;
-  font-size: 0.8em;
-  margin: 1em 0 0.5em 0;
-}
-
-.person p {
-  display: inline;
-}
-
-.person:before {
-  display: inline;
-  content: "👤 ";
-}
-
-.badge-pill {
-  font-weight: bold;
-  background: var(--r-link-color);
-  color: white;
-  border-radius: 1em;
-  padding: 0 0.5em;
-}
-</style>
-```
-
 ::: { style="font-size: 1.0em;" }
 > The ***R Validation Hub*** is a collaboration to support the adoption of R
 > within a biopharmaceutical regulatory setting ([pharmaR.org](https://www.pharmaR.org))
@@ -51,11 +10,7 @@
 * With frequent involvement from health authorities (primarily the FDA)
 * And subscribers from **~60 organizations** spanning multiple industries
 
-
-
 {{< include _r_consortium.qmd >}}
-
-
 
 ## 👷‍♂️ The R Validation Hub: What We Do {transition="slide-in slide-out"}
 
@@ -64,12 +19,12 @@
 ### Products {.center}
 
 ::::: {.columns}
-:::: {.column width="29%" .panel}
+:::: {.column width="29%" .panel .font-size-small}
 #### White Paper
 Guidance on compliant use of R and management of packages
 ::::
 
-:::: {.column width="29%" .panel}
+:::: {.column width="29%" .panel .font-size-small}
 #### Repositories
 
 Building a public, validation-ready resource for R packages  
@@ -79,7 +34,7 @@ Coline Zeballos
 :::
 ::::
 
-:::: {.column width="29%" .panel}
+:::: {.column width="29%" .panel .font-size-small}
 #### Communications
 
 Connecting validation experts across the industry
@@ -92,7 +47,7 @@ Jaxon Abercrombie, Anuja Das, Antal Martinecz
 :::::
 
 ::::: {.columns}
-:::: {.column width="29%" .panel}
+:::: {.column width="29%" .panel .font-size-small}
 #### [`{riskmetric}`](https://github.com/pharmaR/riskmetric)
 
 Gather and report on risk heuristics to support validation decision-making
@@ -102,7 +57,7 @@ Eric Milliman
 :::
 ::::
 
-:::: {.column width="29%" .panel}
+:::: {.column width="29%" .panel .font-size-small}
 #### [`{riskassessment}`](https://github.com/pharmaR/riskassessment)
 
 A web interface to `{riskmetric}`, supporting review,
@@ -113,7 +68,7 @@ Aaron Clark, Jeff Thompson
 :::
 ::::
 
-:::: {.column width="29%" .panel}
+:::: {.column width="29%" .panel .font-size-small}
 #### [`{riskscore}`](https://github.com/pharmaR/riskscore)
 
 An R data package capturing risk metrics across all of CRAN

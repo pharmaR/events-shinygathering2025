@@ -27,19 +27,6 @@
   max-width: 7em;  /* Adjust the size of the images as needed */
   vertical-align: middle;
 }
-
-.panel {
-  font-size: 0.6em;
-  background: rgba(0.75, 0.75, 0.75, 0.1);
-  padding: 1%;
-  margin: 1%;
-  border-radius: 0.5em;
-  border-bottom: solid 0.2em rgba(1, 1, 1, 0.1);
-}
-
-.center {
-  text-align: center;
-}
 </style>
 
 <div class="image-container">
@@ -50,27 +37,27 @@
 </div>
 
 ::: {.columns}
-::: {.column width="25%" .panel .center}
+::: {.column width="25%" .panel .center .font-size-smaller}
 ### Community Grants & Sponsorships
 Over USD $1.4 Million
 :::
 
-::: {.column width="25%" .panel .center}
+::: {.column width="25%" .panel .center .font-size-smaller}
 ### Organizing Large Scale Collaborative Projects
 R Validation Hub, R-Ladies
 :::
 
-::: {.column width="25%" .panel .center}
+::: {.column width="25%" .panel .center .font-size-smaller}
 ### Co-Host Multidisciplinary Data Science Forums
 Stanford Data Institute
 :::
 
-::: {.column width="25%" .panel .center}
+::: {.column width="25%" .panel .center .font-size-smaller}
 ### Direct Support for Key R Events
 R/Medicine, R/Pharma, useR!, LatinR, and more
 :::
 
-::: {.column width="25%" .panel .center}
+::: {.column width="25%" .panel .center .font-size-smaller}
 ### Direct Worldwide Support for R User Groups
 :::
 :::

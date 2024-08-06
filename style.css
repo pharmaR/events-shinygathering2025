@@ -1,0 +1,58 @@
+.blueify {
+  filter: grayscale() brightness(65%) sepia() contrast(150%) saturate(500%) hue-rotate(3.15rad);
+}
+
+.font-size-huge {
+  font-size: 3em;
+}
+
+.font-size-small {
+  font-size: 0.8em;
+}
+
+.font-size-smaller {
+  font-size: 0.6em;
+}
+
+.panel {
+  background: rgba(0.75, 0.75, 0.75, 0.1);
+  padding: 1%;
+  margin: 1%;
+  border-radius: 0.5em;
+  border-bottom: solid 0.35em rgba(1, 1, 1, 0.1);
+}
+
+.dim {
+  font-style: italic;
+  font-weight: bold;
+  opacity: 0.35;  
+  margin: 0 0.5em;
+}
+
+.center {
+  text-align: center;
+}
+
+.person {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: 1em 0 0.5em 0;
+}
+
+.person p {
+  display: inline;
+}
+
+.person:before {
+  display: inline;
+  content: "👤 ";
+}
+
+.badge-pill {
+  font-weight: bold;
+  background: var(--r-link-color);
+  color: white;
+  border-radius: 1em;
+  padding: 0 0.5em;
+}
+
