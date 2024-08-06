@@ -64,15 +64,14 @@
 > In this talk, we showcase the risk assessments over time, the causes of any risk class changes, and  their impact on various teams within our organizations as a result.
 
 
-## Website Refresh
+## Website Refresh: Then
 
-Then:
-Outdated, clumsy, hard to navigate...
-Insert Image TODO
+![](resources/website-old.png)
 
-Now:
-Update, streamlined, user friendly!
-Insert Image TODO
+
+## Website Refresh: Now
+
+![](resources/website-new.png)
 
 
 ## Case Studies Refresh
