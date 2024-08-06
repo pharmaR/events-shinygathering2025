@@ -17,7 +17,7 @@
 
 # 📣 Communications Workstream
 
-## Community Meetings 🗓 TODO add cal icon
+## Community Meetings 📆
 
 ### In the last year...
 - May 21, 2024 - *Tackling Hurdles: Embracing Open-Source Packages in Projects* ([GitHub](https://github.com/pharmaR/events/tree/main/community_meetings/2024-05-21)/[slides](https://github.com/pharmaR/events/blob/main/community_meetings/2024-05-21/RvalHub_2024May_Community_meeting.pdf/[notes](https://github.com/pharmaR/events/blob/main/community_meetings/2024-05-21/21MAY2024_community_meeting_notes.md))
@@ -27,17 +27,30 @@
 - June 27, 2023 - *Learnings & Reflections from Case Studies* ([GitHub](https://github.com/pharmaR/events/tree/main/community_meetings/2023-06-27)/[slides](https://github.com/pharmaR/events/blob/main/community_meetings/2023-06-27/community_mtg_6_27_2023.pdf))
 
 ### How do I sign up?
-- Join our [mailing list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)! TODO: add icon
+- ✉ Join our [mailing list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)!
 - Follow the [R Consortium's Linkedin](https://www.linkedin.com/company/r-consortium/posts/) TODO: add icon
 
 
 ## Our Next Community Meeting
 
-- Next date: 🗓️ Aug 20, 2024
 
-- Speaker: 👷‍♂️ Bríd Roberts, Novartis [TODO: how do I change this icon to female?]
+:::: {.columns}
 
-- Topic:
+::: {.column width="30%"}
+![](resources/brid_roberts.jpg){height="7.4em" style="margin-left:50px"}
+:::
+::: {.column width="45%"}
+
+<br>
+
+🗓️ Tues, Aug 20, 2024
+
+👩‍🦰 Bríd Roberts
+
+⌨️ Novartis
+
+:::
+::::
 
 ### Analyzing change in assessed risk across package releases 
 
@@ -77,10 +90,8 @@ Insert Image TODO
 * New `Function Explorer` page and faster exploration of source code
 * Expanded the package dependency view
 * Miscellaneous items
-  * `About` tab
-  * non-`shinymanager` deployment 
   
-  The feedback loop is crucial! All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
+The feedback loop is crucial! All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
   
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
