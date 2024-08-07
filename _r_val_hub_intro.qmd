@@ -46,6 +46,7 @@ Jaxon Abercrombie, Anuja Das, Antal Martinecz
 ::::
 :::::
 
+:::::: {.fragment}
 ::::: {.columns}
 :::: {.column width="29%" .panel .font-size-small}
 #### [`{riskmetric}`](https://github.com/pharmaR/riskmetric)
@@ -78,4 +79,5 @@ Aaron Clark
 :::
 ::::
 :::::
+::::::
 
