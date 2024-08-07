@@ -104,9 +104,8 @@
 # ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 - ⏰ Latest features 
-- 🆕 New Collaborative Deployment
 - 🛣️ Where we're headed next
-
+- 🆕 New Collaborative Deployment
 
 
 
@@ -184,6 +183,15 @@ All of these improvements started off as community-driven suggestions on our Git
 ::::
 
 
+
+
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` Roadmap
+
+### 💯 Optional: going scoreless
+
+todo: provide details from that open issue
+
+
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} New Collaborative Deployment
 
 ::: {style="margin-left:150px"}
@@ -198,29 +206,22 @@ All of these improvements started off as community-driven suggestions on our Git
     - Decisions: `Undecided`, `Low`, `Medium`, `High` Risk
     - Accepting volunteers! Open an issue
     
-
-::: {style="margin-left:290px"}
+:::: {style="margin-left:290px"}
 _Deployment engineered by:_
-:::
-::: {style="margin-left:250px"}
+::::
+:::: {style="margin-left:250px"}
 ![](resources/procogia-logo.png){height="100"}
-:::
-
-
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` Roadmap
-
-### 💯 Optional: going scoreless
-
-todo: provide details from that open issue
-
+::::
 
 
 
 # ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}`
-- Recap last year's priorities
+- 🔙 Recap last year's priorities
 - 🥅 New Roadmap
 
-## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Recap
+## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Recap 🔙
+
+<br>
 
 ::: { style="font-size:0.8em" }
 - **Ease of use:**  
@@ -237,15 +238,39 @@ todo: provide details from that open issue
   on best practices.
 :::
 
-## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Roadmap
+
+## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Progress 🔄
+
+::: { style="font-size:0.8em" }
+- [**Ease of use:**   ]{style="color:gray"}
+  [Wrapper functions for a a complete workflow, prettier outputs]{style="color:gray"}
+    - near completion!
+- [**Metric completeness:**   ]{style="color:gray"}
+  [Implement metrics for as many pacakge sources as possible. Chain sources 
+  together to create more complete assessments]{style="color:gray"}
+    - made some progress
+- [**Modular additions:**   ]{style="color:gray"}
+  [Allow users to easy add custom assessments, create optional assessments 
+  based on community packages (e.g. `oyster`, `srr`, `pkgstats`, etc)]{style="color:gray"}
+    - On the backlog
+- [**Focusing on metrics ~~and scoring~~:**   ]{style="color:gray"}
+  [Making custom weighting more robust and convenient. Guidance materials on 
+  weighting specific assessments based on community feedback and our own views 
+  on best practices.]{style="color:gray"}
+    - Metrics, Yes! Scoring, No. In fact...
+:::
+
+
+
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} "Risk Tools" Today
 
 ![](resources/riskmetric-gov-1.png){height="18em" style="margin-left:50px"}
 
-## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Roadmap
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} "Risk Tools" Today
 
 ![](resources/riskmetric-gov-2.png){height="18em"}
 
-## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Roadmap
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} "Risk Tools" Roadmap
 
 ![](resources/riskmetric-gov-3.png){height="18em"}
 
