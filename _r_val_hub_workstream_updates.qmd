@@ -5,11 +5,16 @@
 - R Submissions Working group Pioneering use of Containers for delivering
   study analysis with positive health authority feedback.[^pharmasug]
 
+<br>
+
+
+:::: {.fragment}
 ### Reminder: News within the last year
   
 - The FDA appears to accept `.R` files through their eSUB portal[^esub].
 - The FDA has released a draft of a new _Computer Software Assurance[^csa]_ guideline
   that seems to be increasingly the basis for their evaluation of R.
+::::
 
 [^pharmasug]: [PharmaSUG 2024 #SS-376](https://www.pharmasug.org/us/2024/papers.html#SS-376)
 [^esub]: [R Consortium R Submission WG, Pilot #1](https://github.com/RConsortium/submissions-pilot1)
@@ -34,9 +39,16 @@
 
 <br>
 
+:::: {.columns}
+::: {.column width="60%"}
 ### How do I sign up?
-- ✉ Join our [mailing list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)!
+- ✉ Join our [mailing list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)! (pharmaR.org > Contract Us)
 - Follow the [R Consortium's Linkedin](https://www.linkedin.com/company/r-consortium/posts/)
+:::
+::: {.column width="40%"}
+![](resources/linkedIn-logo.png){height="200"}
+:::
+::::
 
 
 ## 📞 Next Community Meeting
@@ -45,7 +57,7 @@
 :::: {.columns}
 
 ::: {.column width="30%"}
-![](resources/brid_roberts.jpg){height="7.4em" style="margin-left:50px;"}
+![](resources/brid_roberts.jpg){height="6.0em" style="margin-left:75px;"}
 :::
 ::: {.column width="45%"}
 
@@ -102,41 +114,97 @@
 
 ### Latest Features Recap
 
-* Expanded decision automation to include individual {riskmetric} assessment values
-* New `Function Explorer` page and faster exploration of source code
+* Decision automation by individual {riskmetric} assessment values
+* New `Function Explorer` for faster exploration of source code, help docs, and tests
 * Expanded the package dependency view
 * Miscellaneous items
-  
+
+<br>
+
+:::: {.fragment}
 ### 📣 The feedback loop is crucial!
 All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
+::::
   
   
   
-  
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
-
-### 🆕 New Collaborative Deployment
-
-[https://app.pharmar.org/riskassessment/](https://app.pharmar.org/riskassessment/)
-
-Call for volunteer "Leads"
-Big thanks to ProCogia TODO: insert logo
 
 
 
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
 
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App Enhancement
+![](resources/riskassessment-flow-chart-novartis.png){height="600" style="margin-left:100px;"}
 
-### Decision Automation Rules, by metric assessment
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
 
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App Enhancement
-
-### New Function Explorer! (Code provided by _GSK_)
+![](resources/decision_automation.gif){height="650" style="margin-left:100px;"}
 
 
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App Enhancement
 
-### Package Dependency Integration
+
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
+
+![](resources/decision-rules-ex.png){width="800" style="margin-left:100px;"}
+![](resources/decision-rules-applied.png){width="800" style="margin-left:100px;"}
+
+
+
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} New Function Explorer! (Code by _GSK_)
+
+:::: {.columns}
+::: {.column width="70%"}
+![](resources/function_explorer.gif){height="575" style="margin-left:120px;"}
+:::
+::: {.column width="30%"}
+<br>
+<br>
+<br>
+<br>
+![](resources/admiral-hex-logo.png){height="250"}
+:::
+::::
+
+
+
+
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Package Dependency Integration
+
+
+:::: {.columns}
+::: {.column width="70%"}
+![](resources/dependencies.gif){height="575" style="margin-left:120px;"}
+:::
+::: {.column width="30%"}
+<br>
+<br>
+<br>
+<br>
+![](resources/admiral-hex-logo.png){height="250"}
+:::
+::::
+
+
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} New Collaborative Deployment
+
+::: {style="margin-left:150px"}
+### 🔗 [app.pharmar.org/riskassessment/](https://app.pharmar.org/riskassessment/)
+:::
+
+### Roles:
+
+- 👀 Viewer
+- 👷 Reviewer [_Add Pkgs & Comment_]
+- 👩‍💼 Lead [_Add Pkgs, Comment, Edit Pkg Summary, Make Decisions_]
+    - Decisions: `Undecided`, `Low`, `Medium`, `High` Risk
+    - Accepting volunteers! Open an issue
+    
+
+::: {style="margin-left:290px"}
+_Deployment engineered by:_
+:::
+::: {style="margin-left:250px"}
+![](resources/procogia-logo.png){height="100"}
+:::
 
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` Roadmap
