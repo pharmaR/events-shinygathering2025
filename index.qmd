@@ -17,10 +17,10 @@ Keep your hand raised if...
 
 :::: {.incremental}
 - [It's early morning and you need an excuse to stretch]{.fragment .semi-fade-out}
-- [This is your first time hearing about the ***R Validation Hub***]{.fragment .semi-fade-out}
-- [Your org contributes to the ***R Validation Hub***]{.fragment .semi-fade-out}
-- [Your org leverages the ***R Validation Hub*** guidelines]{.fragment .semi-fade-out}
+- [This isn't your first time hearing about the ***R Validation Hub***]{.fragment .semi-fade-out}
+- [Your org leverages the ***R Validation Hub*** guidelines (risk-based approach)]{.fragment .semi-fade-out}
 - [Your org uses ***R Validation Hub*** tools (`{riskmetric}`, `{riskassessment}`)]{.fragment .semi-fade-out}
+- [Your org contributes to the ***R Validation Hub***]{.fragment .semi-fade-out}
 ::::
 
 # 🗓️  Agenda
