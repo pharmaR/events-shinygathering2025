@@ -120,7 +120,7 @@
 ### Latest Features Recap
 
 * Decision automation by individual {riskmetric} assessment values
-* New `Function Explorer` for faster exploration of source code, help docs, and tests
+* New `Function Explorer` for exploration of (1) source code, (2) help docs, and (3) tests
 * Expanded the package dependency view
 * Miscellaneous items
 
