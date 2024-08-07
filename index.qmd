@@ -25,6 +25,7 @@ Keep your hand raised if...
 
 # 🗓️  Agenda
 
+- Key Policy updates [2min]{.dim}
 - Communications Workstream [5min]{.dim}
 - `{riskassessment}` App Workstream [5min]{.dim}
 - `{riskmetric}` workstream [10min]{.dim}  
