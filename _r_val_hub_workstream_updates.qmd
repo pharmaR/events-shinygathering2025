@@ -60,7 +60,7 @@
 :::: {.columns}
 
 ::: {.column width="30%"}
-![](resources/brid_roberts.jpg){height="6.0em" style="margin-left:75px;"}
+![](resources/brid_roberts.jpg){height="6.0em" style="margin-left:3em;"}
 :::
 ::: {.column width="45%"}
 
@@ -92,12 +92,12 @@
 
 ## 🚧 Website: `pharmaR.org` NOW
 
-![](resources/website-new.png){style="border-color:black; border-style:solid; border-width:5px;"}
+![](resources/website-new.png){style="border-color:black; border-style:solid; border-width:0.25em;"}
 
 
 ## 📜 Case Studies Refresh
 
-![](resources/website-case-studies.png){style="border-color:black; border-style:solid; border-width:5px;"}
+![](resources/website-case-studies.png){style="border-color:black; border-style:solid; border-width:0.25em;"}
 
 
 ## 🆕 Gathering GxP Package Lists
@@ -135,19 +135,19 @@ All of these improvements started off as community-driven suggestions on our Git
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
 
-![](resources/riskassessment-flow-chart-novartis.png){height="600" style="margin-left:100px;"}
+![](resources/riskassessment-flow-chart-novartis.png){height="600" style="margin-left:4em;"}
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
 
-![](resources/decision_automation.gif){height="650" style="margin-left:100px;"}
+![](resources/decision_automation.gif){height="650" style="margin-left:4em;"}
 
 
 
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
 
-![](resources/decision-rules-ex.png){width="800" style="margin-left:100px;"}
-![](resources/decision-rules-applied.png){width="800" style="margin-left:100px;"}
+![](resources/decision-rules-ex.png){width="800" style="margin-left:4em;"}
+![](resources/decision-rules-applied.png){width="800" style="margin-left:4em;"}
 
 
 
@@ -155,7 +155,7 @@ All of these improvements started off as community-driven suggestions on our Git
 
 :::: {.columns}
 ::: {.column width="70%"}
-![](resources/function_explorer.gif){height="575" style="margin-left:120px;"}
+![](resources/function_explorer.gif){height="575" style="margin-left:4em;"}
 :::
 ::: {.column width="30%"}
 <br>
@@ -174,7 +174,7 @@ All of these improvements started off as community-driven suggestions on our Git
 
 :::: {.columns}
 ::: {.column width="70%"}
-![](resources/dependencies.gif){height="575" style="margin-left:120px;"}
+![](resources/dependencies.gif){height="575" style="margin-left:4em;"}
 :::
 ::: {.column width="30%"}
 <br>
@@ -188,16 +188,27 @@ All of these improvements started off as community-driven suggestions on our Git
 
 
 
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` Roadmap
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` Roadmap 🛣
 
-### 💯 Optional: going scoreless
+<br>
 
-todo: provide details from that open issue
+:::: {.columns}
+::: {.column width="40%"}
+### Going scoreless
 
+- 💯 Optional, defined in Config file
+- Some orgs adopt a hands-on approach to package review, and the score can interfere with that
+- User survey data suggests scores are rarely used for decision making
+:::
+
+::: {.column width="60%"}
+![](resources/no-scores.png){height="500"}
+:::
+::::
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} New Collaborative Deployment
 
-::: {style="margin-left:150px"}
+::: {style="margin-left:6em"}
 ### 🔗 [app.pharmar.org/riskassessment/](https://app.pharmar.org/riskassessment/)
 :::
 
@@ -209,10 +220,10 @@ todo: provide details from that open issue
     - Decisions: `Undecided`, `Low`, `Medium`, `High` Risk
     - Accepting volunteers! Open an issue
     
-:::: {style="margin-left:290px"}
+:::: {style="margin-left:10em"}
 _Deployment engineered by:_
 ::::
-:::: {style="margin-left:250px"}
+:::: {style="margin-left:8.4em"}
 ![](resources/procogia-logo.png){height="100"}
 ::::
 
@@ -279,7 +290,7 @@ _Deployment engineered by:_
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} "Risk Tools" Today
 
-![](resources/riskmetric-gov-1.png){height="18em" style="margin-left:50px"}
+![](resources/riskmetric-gov-1.png){height="18em" style="margin-left:1.8em"}
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} "Risk Tools" Today
 
