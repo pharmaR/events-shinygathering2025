@@ -230,7 +230,7 @@ _Deployment engineered by:_
 - **Ease of use:**  
   Wrapper functions for a a complete workflow, prettier outputs
 - **Metric completeness:**  
-  Implement metrics for as many pacakge sources as possible. Chain sources 
+  Implement metrics for as many package sources as possible. Chain sources 
   together to create more complete assessments
 - **Modular additions:**  
   Allow users to easy add custom assessments, create optional assessments 
@@ -249,7 +249,7 @@ _Deployment engineered by:_
   [Wrapper functions for a a complete workflow, prettier outputs]{style="color:gray"}
     - **Near completion!**
 - [**Metric completeness:**   ]{style="color:gray"}
-  [Implement metrics for as many pacakge sources as possible. Chain sources 
+  [Implement metrics for as many package sources as possible. Chain sources 
   together to create more complete assessments]{style="color:gray"}
     - **Made some progress**
 - [**Modular additions:**   ]{style="color:gray"}
