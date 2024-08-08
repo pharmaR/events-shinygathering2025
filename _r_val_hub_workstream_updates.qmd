@@ -1,18 +1,20 @@
 
 ## 🗝 Key Policy Updates!
 
-- R Submissions Working group Pioneering use of Containers for delivering
-  study analysis with positive health authority feedback.[^pharmasug]
+### Reminder:
 
-<br>
-
-
-:::: {.fragment}
-### Reminder: News within the last year
-  
 - The FDA appears to accept `.R` files through their eSUB portal[^esub].
 - The FDA has released a draft of a new _Computer Software Assurance[^csa]_ guideline
   that seems to be increasingly the basis for their evaluation of R.
+  
+:::: {.fragment}
+  
+- R Submissions Working Group is working on Pilot 4: pioneering use of containers for delivering study analysis
+    - containerizing shiny app from Pilot 2
+    - seeking positive health authority feedback [^pharmasug]
+    - [meeting minutes](https://rconsortium.github.io/submissions-wg/minutes.html) for updates
+
+
 ::::
 
 [^pharmasug]: [PharmaSUG 2024 #SS-376](https://www.pharmasug.org/us/2024/papers.html#SS-376)
@@ -32,6 +34,8 @@
 
 ## 📞 Community Meetings
 
+<br>
+
 ### Past meetups 📆
 
 - Jun 27, 2023 - *Learnings & Reflections from Case Studies* 
@@ -40,18 +44,6 @@
 - Feb 03, 2024 - *Unraveling the Term “Validation”* 
 - May 21, 2024 - *Tackling Hurdles: Embracing Open-Source Packages in Projects* 
 
-<br>
-
-:::: {.columns}
-::: {.column width="60%"}
-### How do I sign up?
-- ✉ Join our [mailing list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)! (pharmaR.org > Contract Us)
-- Follow the [R Consortium's Linkedin](https://www.linkedin.com/company/r-consortium/posts/)
-:::
-::: {.column width="40%"}
-![](resources/linkedIn-logo.png){height="200"}
-:::
-::::
 
 
 ## 📞 Next Community Meeting
@@ -84,6 +76,22 @@
 > In this talk, we showcase the risk assessments over time, the causes of any risk class changes, and  their impact on various teams within our organizations as a result.
 
 
+## 📞 Community Meetings
+
+<br>
+
+:::: {.columns}
+::: {.column width="60%"}
+### How do I sign up?
+- Follow the [R Consortium's Linkedin](https://www.linkedin.com/company/r-consortium/posts/)
+- ✉ Join our [mailing list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)! (pharmaR.org > Contact Us)
+:::
+::: {.column width="40%"}
+![](resources/linkedIn-logo.png){height="160"}
+:::
+::::
+
+![](resources/contact_us.png){style="border-color:black; border-style:solid; border-width:0.25em;"}
 
 ## 🚧 Website: `pharmaR.org` THEN
 
@@ -102,7 +110,36 @@
 
 ## 🆕 Gathering GxP Package Lists
 
+<br>
 
+- **What?**
+    - Pkg name, version, assessment date, risk decision
+
+:::: {.fragment}
+- **Why?**
+    - R Val Hub will analyze & report observed trends & consensus in aggregate
+    - Regulatory Repo WG to help identify which thresholds for certain quality benchmarks
+
+::::
+    
+:::: {.fragment}
+- **How?**
+    - Will publish a form on `pharmaR.org` to Sign Up
+    - Can be 100% anonymous, or consider open-source
+    - 6 pharma Orgs verbally committed, 2 delivered already
+    
+
+::::    
+
+
+## 🆕 Open-sourced Package List
+
+::: {style="margin-left:1em; padding-top:1em"}
+### 🔗 [insightsengineering.github.io/rvalidationhub-packages/](https://insightsengineering.github.io/rvalidationhub-packages/)
+:::
+
+
+![](resources/pkg-lists-roche.png){style="margin-left:3em; padding-top:1em;"}
 
 
 
