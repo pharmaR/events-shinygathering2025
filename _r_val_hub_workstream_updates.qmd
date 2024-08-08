@@ -211,25 +211,22 @@ All of these improvements started off as community-driven suggestions on our Git
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} New Collaborative Deployment
 
-::: {style="margin-left:6em"}
+::: {style="margin-left:6em; padding-top:1em"}
 ### 🔗 [app.pharmar.org/riskassessment/](https://app.pharmar.org/riskassessment/)
 :::
+
+
+[_Deployment engineered by:_]{style="margin-left:7em;"}
+![](resources/procogia-logo.png){height="50" style="vertical-align: middle;"}
+
 
 ### Roles:
 
 - 👀 Viewer
-- 👷 Reviewer [_Add Pkgs & Comment_]
-- 👩‍💼 Lead [_Add Pkgs, Comment, Edit Pkg Summary, Make Decisions_]
+- 👷 Reviewer [[_Add Pkgs & Comment_]]{style="color:gray"}
+- 👩‍💼 Lead [[_Add Pkgs, Comment, Edit Pkg Summary, Make Decisions_]]{style="color:gray"}
     - Decisions: `Undecided`, `Low`, `Medium`, `High` Risk
     - Accepting volunteers! Open an issue
-    
-:::: {style="margin-left:10em"}
-_Deployment engineered by:_
-::::
-:::: {style="margin-left:8.4em"}
-![](resources/procogia-logo.png){height="100"}
-::::
-
 
 
 # ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}`
