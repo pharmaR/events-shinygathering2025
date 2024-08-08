@@ -121,12 +121,12 @@
 
 * Decision automation by individual {riskmetric} assessment values
 * New `Function Explorer` for exploration of (1) source code, (2) help docs, and (3) tests
-* Expanded the package dependency view
-* Miscellaneous items
+* Tons more...
+    * Non-`{shinymanager}` deployment options
+    * Expanded Dependency Support
+    * About tab
 
-<br>
-
-:::: {.fragment}
+:::: {.fragment style="padding-top:1em"}
 ### 📣 The feedback loop is crucial!
 All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
 ::::
@@ -159,25 +159,6 @@ All of these improvements started off as community-driven suggestions on our Git
 :::: {.columns}
 ::: {.column width="70%"}
 ![](resources/function_explorer.gif){height="575" style="margin-left:4em;"}
-:::
-::: {.column width="30%"}
-<br>
-<br>
-<br>
-<br>
-![](resources/admiral-hex-logo.png){height="250"}
-:::
-::::
-
-
-
-
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Package Dependency Integration
-
-
-:::: {.columns}
-::: {.column width="70%"}
-![](resources/dependencies.gif){height="575" style="margin-left:4em;"}
 :::
 ::: {.column width="30%"}
 <br>
