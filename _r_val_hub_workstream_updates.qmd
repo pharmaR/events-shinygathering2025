@@ -134,16 +134,25 @@
 
 ### Latest Features Recap
 
-* Decision automation by individual {riskmetric} assessment values
-* New `Function Explorer` for exploration of (1) source code, (2) help docs, and (3) tests
+::::: {.columns}
+:::: {.column width="75%"}
+
+* Decision automation by {riskmetric} assessment values
+* New `Function Explorer` for (1) source code, (2) help docs, and (3) tests
 * Tons more...
     * Non-`{shinymanager}` deployment options
     * Expanded Dependency Support
-    * About tab
+    * Added an `'About'` tab
+    
+::::
+:::: {.column width="25%"}
+![](resources/riskassessment_3_1_1.png){height="250" style="margin-left:.25em"}
+:::
+:::::
 
 :::: {.fragment style="padding-top:1em"}
 ### 📣 The feedback loop is crucial!
-All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today and it may become a reality tomorrow.
+All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today.
 ::::
   
   
@@ -240,16 +249,18 @@ All of these improvements started off as community-driven suggestions on our Git
   Implement metrics for as many package sources as possible. Chain sources 
   together to create more complete assessments
 - **Modular additions:**  
-  Allow users to easy add custom assessments, create optional assessments 
+  Allow users to add custom & optional assessments 
   based on community packages (e.g. `oyster`, `srr`, `pkgstats`, etc)
 - **Focusing on metrics and scoring:**  
-  Making custom weighting more robust and convenient. Guidance materials on 
-  weighting specific assessments based on community feedback and our own views 
+  Making custom weighting more robust and convenient. Produce guidance materials for 
+  weighting specific assessments based on community feedback and publish our own views 
   on best practices.
 :::
 
 
 ## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Progress 🔄
+
+<br>
 
 ::: { style="font-size:0.8em" }
 - [**Ease of use:**   ]{style="color:gray"}
