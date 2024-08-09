@@ -1,26 +1,4 @@
 
-## 🗝 Key Policy Updates!
-
-### Reminder:
-
-- The FDA appears to accept `.R` files through their eSUB portal[^esub].
-- The FDA has released a draft of a new _Computer Software Assurance[^csa]_ guideline
-  that seems to be increasingly the basis for their evaluation of R.
-  
-:::: {.fragment}
-  
-- R Submissions Working Group is working on Pilot 4: pioneering use of containers for delivering study analysis
-    - containerizing shiny app from Pilot 2
-    - seeking positive health authority feedback [^pharmasug]
-    - [meeting minutes](https://rconsortium.github.io/submissions-wg/minutes.html) for updates
-
-
-::::
-
-[^pharmasug]: [PharmaSUG 2024 #SS-376](https://www.pharmasug.org/us/2024/papers.html#SS-376)
-[^esub]: [R Consortium R Submission WG, Pilot #1](https://github.com/RConsortium/submissions-pilot1)
-[^csa]: [_Computer Software Assurance for Production and Quality Systems Software: Draft Guidance for Industry and Food and Drug Administration Staff_](https://www.fda.gov/media/161521/download)
-
 
 # 📜 Workstream Updates {transition="slide-in none"}
 
