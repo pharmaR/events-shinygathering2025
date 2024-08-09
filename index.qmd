@@ -2,7 +2,7 @@
 title: "Driving Consensus Through Repos"
 author:
   - name: "<span style='font-weight: bold;'>R/Pharma Summit @ Posit Conf 2024, August 11th</span>"
-  - name: "<span style='margin-left: 2.0em;'>Slides available: [pharmar.github.io/events-positconf2024](https://pharmar.github.io/events-positconf2024)</span>"
+  - name: "<span style='margin-left: 2.0em;'>Slides: 🔗  [bit.ly/PositConf24](https://pharmar.github.io/events-positconf2024)</span>"
   - name: "<br>"
   - name: _On behalf of the R Validation Hub team:_
   - name: "<span style='margin-left: 2.0em;'>Aaron Clark</span> <span style='font-style: italic; margin-left: 0.5em;'><a href='http://arcusbio.com'>Arcus Biosciences</a></span>"
@@ -17,18 +17,17 @@ Keep your hand raised if...
 
 :::: {.incremental}
 - [It's early morning and you need an excuse to stretch]{.fragment .semi-fade-out}
-- [This is your first time hearing about the ***R Validation Hub***]{.fragment .semi-fade-out}
-- [Your org contributes to the ***R Validation Hub***]{.fragment .semi-fade-out}
-- [Your org leverages the ***R Validation Hub*** guidelines]{.fragment .semi-fade-out}
+- [This isn't your first time hearing about the ***R Validation Hub***]{.fragment .semi-fade-out}
+- [Your org leverages the ***R Validation Hub*** guidelines (risk-based approach)]{.fragment .semi-fade-out}
 - [Your org uses ***R Validation Hub*** tools (`{riskmetric}`, `{riskassessment}`)]{.fragment .semi-fade-out}
+- [Your org contributes to the ***R Validation Hub***]{.fragment .semi-fade-out}
 ::::
 
 # 🗓️  Agenda
 
-- Key Policy updates [2min]{.dim}
-- Communications Workstream [5min]{.dim}
-- `{riskassessment}` App Workstream [5min]{.dim}
-- `{riskmetric}` workstream [10min]{.dim}  
+- Communications Workstream [6min]{.dim}
+- `{riskassessment}` App Workstream [7min]{.dim}
+- `{riskmetric}` workstream [7min]{.dim}  
   _Watch for big changes coming_
 - Repositories Workstream  [25min]{.dim}
 - **Room Discussion** [10 - 15min]{.dim}
