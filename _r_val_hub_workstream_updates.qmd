@@ -311,7 +311,7 @@ All of these improvements started off as community-driven suggestions on our Git
 ![](resources/riskmetric-gov-3.png){height="18em"}
 :::
 
-::: {.column width="25%"}
+::: {.column width="25%" .fragment}
 ![](resources/coming-soon.png){height="8em"}
 :::
 
