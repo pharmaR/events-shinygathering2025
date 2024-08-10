@@ -243,20 +243,28 @@ All of these improvements started off as community-driven suggestions on our Git
 
 <br>
 
-::: { style="font-size:0.8em" }
+:::: { style="font-size:0.8em" }
+::: {.fragment}
 - **Ease of use:**  
   Wrapper functions for a a complete workflow, prettier outputs
+:::
+::: {.fragment}
 - **Metric completeness:**  
   Implement metrics for as many package sources as possible. Chain sources 
   together to create more complete assessments
+:::
+::: {.fragment}
 - **Modular additions:**  
   Allow users to add custom & optional assessments 
   based on community packages (e.g. `oyster`, `srr`, `pkgstats`, etc)
+:::
+::: {.fragment}
 - **Focusing on metrics and scoring:**  
   Making custom weighting more robust and convenient. Produce guidance materials for 
   weighting specific assessments based on community feedback and publish our own views 
   on best practices.
 :::
+::::
 
 
 ## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Progress 🔄
