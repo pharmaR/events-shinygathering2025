@@ -1,39 +1,11 @@
-
-
-# 📜 Workstream Updates {transition="slide-in none"}
-
-
-# 📣 Communications Workstream
-
-- 📞 Community Meetings
-- 🚧 Website Revamp
-- 📜 Case Studies Refresh
-- 🆕 Gathering GxP Package Lists
-
-## 📞 Community Meetings
-
-<br>
-
-### Past meetups 📆
-
-- Jun 27, 2023 - *Learnings & Reflections from Case Studies* 
-- Aug 09, 2023 - *{riskmetric} & the {riskassessment} app – A 2-part Mini Series* 
-- Nov 28, 2023 - *Wrapping Up 2023 and Welcoming 2024* 
-- Feb 03, 2024 - *Unraveling the Term “Validation”* 
-- May 21, 2024 - *Tackling Hurdles: Embracing Open-Source Packages in Projects* 
-
-
-
 ## 📞 Next Community Meeting
 
-
-:::: {.columns}
-
+::: columns
 ::: {.column width="30%"}
 ![](resources/brid_roberts.jpg){height="6.0em" style="margin-left:3em;"}
 :::
-::: {.column width="45%"}
 
+::: {.column width="45%"}
 <br>
 
 🗓️ Tues, Aug 20, 2024
@@ -41,179 +13,128 @@
 👩‍🦰 Bríd Roberts
 
 ⌨️ Novartis
-
 :::
-::::
+:::
 
-### Analyzing change in assessed risk across package releases 
+### Analyzing change in assessed risk across package releases
 
-> The Software Open Source (SOS) team manages and executes the risk assessment process for R package validation at Novartis. The team uses an internally developed R package to classify the risk of each package as "low", "medium", or "high".
-> 
-> We analysed the risk assessment data over two time points to determine the impact on the assigned risk categorisation for packages with AND without version changes. 
-> 
-> In this talk, we showcase the risk assessments over time, the causes of any risk class changes, and  their impact on various teams within our organizations as a result.
-
+> The Software Open Source (SOS) team manages and executes the risk
+> assessment process for R package validation at Novartis. The team uses
+> an internally developed R package to classify the risk of each package
+> as "low", "medium", or "high".
+>
+> We analysed the risk assessment data over two time points to determine
+> the impact on the assigned risk categorisation for packages with AND
+> without version changes.
+>
+> In this talk, we showcase the risk assessments over time, the causes
+> of any risk class changes, and their impact on various teams within
+> our organizations as a result.
 
 ## 📞 Community Meetings
 
 <br>
 
-:::: {.columns}
+::: columns
 ::: {.column width="60%"}
 ### How do I sign up?
-- Follow the [R Consortium's Linkedin](https://www.linkedin.com/company/r-consortium/posts/)
-- ✉ Join our [mailing list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)! (pharmaR.org > Contact Us)
+
+-   Follow the [R Consortium's
+    Linkedin](https://www.linkedin.com/company/r-consortium/posts/)
+-   ✉ Join our [mailing
+    list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)!
+    (pharmaR.org \> Contact Us)
 :::
+
 ::: {.column width="40%"}
 ![](resources/linkedIn-logo.png){height="160"}
 :::
-::::
+:::
 
 ![](resources/contact_us.png){style="border-color:black; border-style:solid; border-width:0.25em;"}
 
-## 🚧 Website: `pharmaR.org` THEN
-
-![](resources/website-old.png)
-
-
-## 🚧 Website: `pharmaR.org` NOW
-
-![](resources/website-new.png){style="border-color:black; border-style:solid; border-width:0.25em;"}
-
-
-## 📜 Case Studies Refresh
-
-![](resources/website-case-studies.png){style="border-color:black; border-style:solid; border-width:0.25em;"}
-
-
-## 🆕 Gathering GxP Package Lists
-
-<br>
-
-- **What?**
-    - Pkg name, version, assessment date, risk decision
-
-:::: {.fragment}
-- **Why?**
-    - R Val Hub will analyze & report observed trends & consensus in aggregate
-    - Regulatory Repo WG to help identify which thresholds for certain quality benchmarks
-
-::::
-    
-:::: {.fragment}
-- **How?**
-    - Will publish a form on `pharmaR.org` to Sign Up
-    - Can be 100% anonymous, or consider open-source
-    - 6 pharma Orgs verbally committed, 2 delivered already
-    
-
-::::    
-
-
-## 🆕 Open-sourced Package List
-
-::: {style="margin-left:1em; padding-top:1em"}
-### 🔗 [insightsengineering.github.io/rvalidationhub-packages/](https://insightsengineering.github.io/rvalidationhub-packages/)
-:::
-
-
-![](resources/pkg-lists-roche.png){style="margin-left:3em; padding-top:1em;"}
-
-
-
-
 # ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
-- ⏰ Latest features 
-- 🛣️ Where we're headed next
-- 🆕 New Collaborative Deployment
-
-
+-   ⏰ Latest features
+-   🛣️ Where we're headed next
+-   🆕 New Collaborative Deployment
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App
 
 ### Latest Features Recap
 
-::::: {.columns}
-:::: {.column width="75%"}
+::: columns
+::: {.column width="75%"}
+#### [Watch our Demo at Posit Conf 2024!](https://youtu.be/VS_t5IoQbOE?si=ukHxj9yBNEboS8XT&t=628)
+[![](resources/positconf2024_youtube.png)](https://youtu.be/VS_t5IoQbOE?si=ukHxj9yBNEboS8XT&t=628)
+:::
 
-* Decision automation by {riskmetric} assessment values
-* New `Function Explorer` for (1) source code, (2) help docs, and (3) tests
-* Tons more...
-    * Non-`{shinymanager}` deployment options
-    * Expanded Dependency Support
-    * Added an `'About'` tab
-    
-::::
-:::: {.column width="25%"}
+::: {.column width="25%"}
 #### [New Post!](https://www.pharmar.org/posts/news/updates-aug-2024/){style="margin-left:2.75em"}
-![](resources/riskassessment_3_1_1.png){height="225" style="margin-left:.25em"}
-:::
-:::::
 
-:::: {.fragment style="padding-top:1em"}
+![](resources/riskassessment_3_1_1.png){height="225"
+style="margin-left:.25em"}
+:::
+:::
+
+::: {.fragment style="padding-top:1em"}
 ### 📣 The feedback loop is crucial!
-All of these improvements started off as community-driven suggestions on our GitHub repo. If you have an idea that doesn't already exist on the [existing list](https://github.com/pharmaR/riskassessment/issues) of issues, [submit a new issue](https://github.com/pharmaR/riskassessment/issues/new) today.
-::::
-  
-  
-  
 
-
-
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
-
-![](resources/riskassessment-flow-chart-novartis.png){height="600" style="margin-left:4em;"}
+All of these improvements started off as community-driven suggestions on
+our GitHub repo. If you have an idea that doesn't already exist on the
+[existing list](https://github.com/pharmaR/riskassessment/issues) of
+issues, [submit a new
+issue](https://github.com/pharmaR/riskassessment/issues/new) today.
+:::
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
 
-![](resources/decision_automation.gif){height="650" style="margin-left:4em;"}
-
-
-
+![](resources/riskassessment-flow-chart-novartis.png){height="600"
+style="margin-left:4em;"}
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
 
-![](resources/decision-rules-ex.png){width="800" style="margin-left:4em;"}
-![](resources/decision-rules-applied.png){width="800" style="margin-left:4em;"}
+![](resources/decision_automation.gif){height="650"
+style="margin-left:4em;"}
 
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} Decision Automation Rules, by assessment
 
+![](resources/decision-rules-ex.png){width="800"
+style="margin-left:4em;"}
+![](resources/decision-rules-applied.png){width="800"
+style="margin-left:4em;"}
 
-## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} New Function Explorer! (Code by _GSK_)
+## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} New Function Explorer! (Code by *GSK*)
 
-:::: {.columns}
+::: columns
 ::: {.column width="70%"}
-![](resources/function_explorer.gif){height="575" style="margin-left:4em;"}
+![](resources/function_explorer.gif){height="575"
+style="margin-left:4em;"}
 :::
+
 ::: {.column width="30%"}
-<br>
-<br>
-<br>
-<br>
-![](resources/admiral-hex-logo.png){height="250"}
+<br> <br> <br> <br> ![](resources/admiral-hex-logo.png){height="250"}
 :::
-::::
-
-
-
+:::
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` Roadmap 🛣
 
 <br>
 
-:::: {.columns}
+::: columns
 ::: {.column width="40%"}
 ### Going scoreless
 
-- 💯 Optional, defined in Config file
-- Some orgs adopt a hands-on approach to package review, and the score can interfere with that
-- User survey data suggests scores are rarely used for decision making
+-   💯 Optional, defined in Config file
+-   Some orgs adopt a hands-on approach to package review, and the score
+    can interfere with that
+-   User survey data suggests scores are rarely used for decision making
 :::
 
 ::: {.column width="60%"}
 ![](resources/no-scores.png){height="500"}
 :::
-::::
+:::
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} New Collaborative Deployment
 
@@ -221,80 +142,82 @@ All of these improvements started off as community-driven suggestions on our Git
 ### 🔗 [app.pharmar.org/riskassessment/](https://app.pharmar.org/riskassessment/)
 :::
 
-
-[_Deployment engineered by:_]{style="margin-left:7em;"}
-![](resources/procogia-logo.png){height="50" style="vertical-align: middle;"}
-
+[*Deployment engineered by:*]{style="margin-left:7em;"}
+![](resources/procogia-logo.png){height="50"
+style="vertical-align: middle;"}
 
 ### Roles:
 
-- 👀 Viewer
-- 👷 Reviewer [[_Add Pkgs & Comment_]]{style="color:gray"}
-- 👩‍💼 Lead [[_Add Pkgs, Comment, Edit Pkg Summary, Make Decisions_]]{style="color:gray"}
-    - Decisions: `Undecided`, `Low`, `Medium`, `High` Risk
-    - Accepting volunteers! Open an issue
-
+-   👀 Viewer
+-   👷 Reviewer [\[*Add Pkgs & Comment*\]]{style="color:gray"}
+-   👩‍💼 Lead [\[*Add Pkgs, Comment, Edit Pkg Summary, Make
+    Decisions*\]]{style="color:gray"}
+    -   Decisions: `Undecided`, `Low`, `Medium`, `High` Risk
+    -   Accepting volunteers! Open an issue
 
 # ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}`
-- 🔙 Recap last year's priorities
-- 🥅 New Roadmap
+
+-   🔙 Recap last year's priorities
+-   🥅 New Roadmap
 
 ## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Recap 🔙
 
 <br>
 
-:::: { style="font-size:0.8em" }
-::: {.fragment}
-- **Ease of use:**  
-  Wrapper functions for a a complete workflow, prettier outputs
+::: {style="font-size:0.8em"}
+::: fragment
+-   **Ease of use:**\
+    Wrapper functions for a a complete workflow, prettier outputs
 :::
-::: {.fragment}
-- **Metric completeness:**  
-  Implement metrics for as many package sources as possible. Chain sources 
-  together to create more complete assessments
-:::
-::: {.fragment}
-- **Modular additions:**  
-  Allow users to add custom & optional assessments 
-  based on community packages (e.g. `oyster`, `srr`, `pkgstats`, etc)
-:::
-::: {.fragment}
-- **Focusing on metrics and scoring:**  
-  Making custom weighting more robust and convenient. Produce guidance materials for 
-  weighting specific assessments based on community feedback and publish our own views 
-  on best practices.
-:::
-::::
 
+::: fragment
+-   **Metric completeness:**\
+    Implement metrics for as many package sources as possible. Chain
+    sources together to create more complete assessments
+:::
+
+::: fragment
+-   **Modular additions:**\
+    Allow users to add custom & optional assessments based on community
+    packages (e.g. `oyster`, `srr`, `pkgstats`, etc)
+:::
+
+::: fragment
+-   **Focusing on metrics and scoring:**\
+    Making custom weighting more robust and convenient. Produce guidance
+    materials for weighting specific assessments based on community
+    feedback and publish our own views on best practices.
+:::
+:::
 
 ## ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskmetric}` Progress 🔄
 
 <br>
 
-::: { style="font-size:0.8em" }
-- [**Ease of use:**   ]{style="color:gray"}
-  [Wrapper functions for a a complete workflow, prettier outputs]{style="color:gray"}
-    - **Near completion!**
-- [**Metric completeness:**   ]{style="color:gray"}
-  [Implement metrics for as many package sources as possible. Chain sources 
-  together to create more complete assessments]{style="color:gray"}
-    - **Made some progress**
-- [**Modular additions:**   ]{style="color:gray"}
-  [Allow users to easy add custom assessments, create optional assessments 
-  based on community packages (e.g. `oyster`, `srr`, `pkgstats`, etc)]{style="color:gray"}
-    - **On the backlog**
-- [**Focusing on metrics ~~and scoring~~:**   ]{style="color:gray"}
-  [Making custom weighting more robust and convenient. Guidance materials on 
-  weighting specific assessments based on community feedback and our own views 
-  on best practices.]{style="color:gray"}
-    - **Metrics, Yes! Scoring, No. In fact...**
+::: {style="font-size:0.8em"}
+-   [**Ease of use:**]{style="color:gray"} [Wrapper functions for a a
+    complete workflow, prettier outputs]{style="color:gray"}
+    -   **Near completion!**
+-   [**Metric completeness:**]{style="color:gray"} [Implement metrics
+    for as many package sources as possible. Chain sources together to
+    create more complete assessments]{style="color:gray"}
+    -   **Made some progress**
+-   [**Modular additions:**]{style="color:gray"} [Allow users to easy
+    add custom assessments, create optional assessments based on
+    community packages (e.g. `oyster`, `srr`, `pkgstats`,
+    etc)]{style="color:gray"}
+    -   **On the backlog**
+-   [**Focusing on metrics ~~and scoring~~:**]{style="color:gray"}
+    [Making custom weighting more robust and convenient. Guidance
+    materials on weighting specific assessments based on community
+    feedback and our own views on best practices.]{style="color:gray"}
+    -   **Metrics, Yes! Scoring, No. In fact...**
 :::
-
-
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} "Risk Tools" Today
 
-![](resources/riskmetric-gov-1.png){height="18em" style="margin-left:1.8em"}
+![](resources/riskmetric-gov-1.png){height="18em"
+style="margin-left:1.8em"}
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} "Risk Tools" Today
 
@@ -302,13 +225,12 @@ All of these improvements started off as community-driven suggestions on our Git
 
 ## ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} ![](resources/riskmetric.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} "Risk Tools" Roadmap
 
-:::: {.columns}
+::: columns
 ::: {.column width="75%"}
 ![](resources/riskmetric-gov-3.png){height="18em"}
 :::
 
-::: {.column width="25%" .fragment}
+::: {.column .fragment width="25%"}
 ![](resources/coming-soon.png){height="8em"}
 :::
-
-::::
+:::
