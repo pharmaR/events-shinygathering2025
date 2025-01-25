@@ -1,3 +1,4 @@
+
 # 👋 Who We Are {transition="none-in slide-out"}
 
 ::: { style="font-size: 1.0em;" }
@@ -10,7 +11,19 @@
 * With frequent involvement from health authorities (primarily the FDA)
 * And subscribers from **~60 organizations** spanning multiple industries
 
+
+
+
+
+
+
 {{< include _r_consortium.qmd >}}
+
+
+
+
+
+
 
 ## 👷‍♂️ The R Validation Hub: What We Do {transition="slide-in slide-out"}
 
@@ -81,3 +94,35 @@ Aaron Clark
 :::::
 ::::::
 
+
+
+
+
+
+
+
+## 📞 Community Meetings
+
+<br>
+
+::: columns
+::: {.column width="60%"}
+### Sign up
+
+-   Follow the [R Consortium's
+    Linkedin](https://www.linkedin.com/company/r-consortium/posts/)
+-   ✉ Join our [mailing
+    list](https://lists.r-consortium.org/g/RConsortium-Validation-Hub)!
+    (pharmaR.org \> Contact Us)
+:::
+
+::: {.column width="40%"}
+![](resources/linkedIn-logo.png){height="150"}
+:::
+:::
+
+::: columns
+::: {.column width="80%"}
+![](resources/contact_us.png){style="border-color:black; border-style:solid; border-width:0.25em;"}
+:::
+:::

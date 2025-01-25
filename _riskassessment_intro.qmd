@@ -1,0 +1,136 @@
+
+<!-- # ![](resources/riskassessment.png){height="1.8em" width="1.8em" style="margin: 0 0.2em; object-fit: contain;vertical-align: middle;"} `{riskassessment}` App -->
+
+<!-- -      Brief Intro -->
+<!-- -   ⏰ Latest features -->
+<!-- -   🛣️ Where we're headed next -->
+<!-- -   🆕 New Collaborative Deployment -->
+
+
+
+
+## Two tools: what do they do
+
+::: columns
+::: {.column width="20%"}
+![](resources/riskmetric_logo.png) <br><br> ![](resources/riskassessment_logo.png)
+:::
+
+::: {.column width="75%" style="font-size:28px"}
+
+<br>
+
+is a framework to quantify an R package's "risk" by assessing several meaningful metrics designed to evaluate package development best practices, code documentation, community engagement, and development sustainability.<br><br><br><br><br> is a full-fledged R package containing a shiny front-end that augments the utility of `{riskmetric}`. The application's goal is to provide a central hub for an organization to review and assess the risk of R packages, providing handy tools and guide rails along the way.
+:::
+:::
+
+
+
+
+
+## Quantify risk programmatically
+
+::: columns
+::: {.column width="20%"}
+![](resources/riskmetric_logo.png)
+:::
+
+::: {.column width="80%"}
+::: {style="font-size:28px"}
+Sometimes "quality" is measurable! Software dev best practices dictate an R-package should have:<br>
+
+-   A license
+-   Source code available for browsing
+-   An easy to contact maintainer
+-   A place to report bugs
+-   Evidence that new bugs are being addressed
+-   Complete Function documentation
+-   Adequate test coverage
+-   Community usage
+
+18 total assessments (to date)!
+:::
+:::
+:::
+
+
+
+
+
+
+
+## Why create a Shiny app? {auto-animate=true .scrollable}
+
+::: columns
+::: {.column width="20%"}
+![](resources/riskassessment_logo.png)
+:::
+
+::: {.column width="80%"}
+::: {style="font-size:24px" .incremental}
+<br><b>Main goal</b>: help those making "package inclusion" requests for GxP environments. So, the app's highest and best use is all about two things:
+
+- Forcing org members to take responsibility for assessing package risk themselves prior to making an IT request
+- Generating a summary report for IT that shows the requester has done their due diligence meeting inclusion requirements
+
+
+:::
+:::
+:::
+
+. . .
+
+![](resources/user_to_example_report_to_it_sm.png)
+
+
+
+
+
+
+## Why create a Shiny app? (cont'd)
+
+::: columns
+::: {.column width="20%"}
+![](resources/riskassessment_logo.png)
+:::
+
+::: {.column width="80%"}
+::: {style="font-size:24px" .incremental}
+<b>Main goal</b>: help those those making "package inclusion" requests for GxP environments. They need support to...
+
+-   Provide a platform for package exploration without the need to write any custom `{riskmetric}`
+-   Run `{riskmetric}` on the same machine with the same environment -- creating a central hub for reproducibility
+-   Maintain consistent, org-specific settings/options when producing risk outputs
+-   Automate a risk-based "decision triage" based on pre-defined rules, saving time & effort
+-   Manage who's involved in the review process via user authentication & role management
+-   Facilitate and store user summaries & communication, on certain packages and/or certain metrics
+-   Generate risk summary reports, for sharing with the decision making parties
+:::
+:::
+:::
+
+
+
+
+
+
+
+
+
+
+## Latest Features
+
+::: columns
+::: {.column width="70%"}
+#### [Watch our Demo at Posit Conf 2024!](https://youtu.be/VS_t5IoQbOE?si=ukHxj9yBNEboS8XT&t=628)
+[![](resources/positconf2024_youtube.png)](https://youtu.be/VS_t5IoQbOE?si=ukHxj9yBNEboS8XT&t=628)
+:::
+
+::: {.column width="30%"}
+#### [New Post!](https://www.pharmar.org/posts/news/updates-aug-2024/){style="margin-left:2.75em"}
+
+![](resources/riskassessment_3_1_1.png){height="225"
+style="margin-left:.25em"}
+:::
+:::
+
