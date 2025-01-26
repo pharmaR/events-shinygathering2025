@@ -9,6 +9,25 @@
 
 
 
+## Latest Features
+
+::: columns
+::: {.column width="70%"}
+#### [Watch our Demo at Posit Conf 2024!](https://youtu.be/VS_t5IoQbOE?si=ukHxj9yBNEboS8XT&t=628)
+[![](resources/positconf2024_youtube.png)](https://youtu.be/VS_t5IoQbOE?si=ukHxj9yBNEboS8XT&t=628)
+:::
+
+::: {.column width="30%"}
+#### [New Post!](https://www.pharmar.org/posts/news/updates-aug-2024/){style="margin-left:2.75em"}
+
+![](resources/riskassessment_3_1_1.png){height="225"
+style="margin-left:.25em"}
+:::
+:::
+
+
+
+
 ## Two tools: what do they do
 
 ::: columns
@@ -58,29 +77,163 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 
 
 
+## Why create a Shiny app? {auto-animate=true .scrollable}
+
+::: columns
+::: {.column width="20%"}
+![](resources/riskassessment_logo.png){height="190"}
+:::
+
+::: {.column width="80%"}
+::: {style="font-size:24px" .incremental}
+<br><b>Main goal: help offset demand for GxP "package inclusion requests".</b>
+
+:::
+:::
+:::
+
+![](resources/user_to_example_pkg_sm.png)
+
+
+
+
+
+
+
+
+
 
 ## Why create a Shiny app? {auto-animate=true .scrollable}
 
 ::: columns
 ::: {.column width="20%"}
-![](resources/riskassessment_logo.png)
+![](resources/riskassessment_logo.png){height="190"}
 :::
 
 ::: {.column width="80%"}
 ::: {style="font-size:24px" .incremental}
-<br><b>Main goal</b>: help those making "package inclusion" requests for GxP environments. So, the app's highest and best use is all about two things:
+<br><b>Main goal: help offset demand for GxP "package inclusion requests".</b>
 
-- Forcing org members to take responsibility for assessing package risk themselves prior to making an IT request
-- Generating a summary report for IT that shows the requester has done their due diligence meeting inclusion requirements
+:::
+:::
+:::
+
+![](resources/user_to_example_qual_list_sm.png)
+
+
+
+
+
+
+
+
+
+## Why create a Shiny app? {auto-animate=true .scrollable}
+
+::: columns
+::: {.column width="20%"}
+![](resources/riskassessment_logo.png){height="190"}
+:::
+
+::: {.column width="80%"}
+::: {style="font-size:24px" .incremental}
+<br><b>Main goal: help offset demand for GxP "package inclusion requests".</b>
+
+:::
+:::
+:::
+
+![](resources/user_to_example_request_to_it_sm.png)
+
+
+
+
+
+
+
+## Why create a Shiny app? {auto-animate=true .scrollable}
+
+::: columns
+::: {.column width="20%"}
+![](resources/riskassessment_logo.png){height="190"}
+:::
+
+::: {.column width="80%"}
+::: {style="font-size:24px"}
+<br><b>Main goal: help offset demand for GxP "package inclusion requests".</b>
+
+- Shifts responsibility of assessing package risk to the person(s) requesting it
+
+:::
+:::
+:::
+
+![](resources/user_to_example_request_to_it_sm_x.png)
+
+
+
+
+
+
+
+
+
+
+## Why create a Shiny app? {auto-animate=true .scrollable}
+
+::: columns
+::: {.column width="20%"}
+![](resources/riskassessment_logo.png){height="190"}
+:::
+
+::: {.column width="80%"}
+::: {style="font-size:24px"}
+<br><b>Main goal: help offset demand for GxP "package inclusion requests".</b>
+
+- Shifts responsibility of assessing package risk to the person(s) requesting it
+- Leverage the app's risk-based "decision triage" (based on org-defined rules) to output a risk summary report
+
+:::
+:::
+:::
+
+![](resources/user_to_example_report_to_review_sm.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Why create a Shiny app? {auto-animate=true .scrollable}
+
+::: columns
+::: {.column width="20%"}
+![](resources/riskassessment_logo.png){height="190"}
+:::
+
+::: {.column width="80%"}
+::: {style="font-size:24px"}
+<br><b>Main goal: help offset demand for GxP "package inclusion requests".</b>
+
+- Shifts responsibility of assessing package risk to the person(s) requesting it
+- Leverage the app's risk-based "decision triage" (based on org-defined rules) to output a risk summary report
+- Changes communication from "Can we add this?" to a informed "We can add this."
 
 
 :::
 :::
 :::
 
-. . .
 
 ![](resources/user_to_example_report_to_it_sm.png)
+
 
 
 
@@ -91,20 +244,18 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 
 ::: columns
 ::: {.column width="20%"}
-![](resources/riskassessment_logo.png)
+![](resources/riskassessment_logo.png){height="190"}
 :::
 
-::: {.column width="80%"}
-::: {style="font-size:24px" .incremental}
-<b>Main goal</b>: help those those making "package inclusion" requests for GxP environments. They need support to...
+::: {.column width="70%"}
+::: {style="font-size:28px" .incremental}
+<b>Bonus / Secondary Perks</b>:
 
 -   Provide a platform for package exploration without the need to write any custom `{riskmetric}`
 -   Run `{riskmetric}` on the same machine with the same environment -- creating a central hub for reproducibility
 -   Maintain consistent, org-specific settings/options when producing risk outputs
--   Automate a risk-based "decision triage" based on pre-defined rules, saving time & effort
 -   Manage who's involved in the review process via user authentication & role management
--   Facilitate and store user summaries & communication, on certain packages and/or certain metrics
--   Generate risk summary reports, for sharing with the decision making parties
+-   Facilitate and store user summaries & communication, on packages and/or metrics
 :::
 :::
 :::
@@ -116,21 +267,4 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 
 
 
-
-
-## Latest Features
-
-::: columns
-::: {.column width="70%"}
-#### [Watch our Demo at Posit Conf 2024!](https://youtu.be/VS_t5IoQbOE?si=ukHxj9yBNEboS8XT&t=628)
-[![](resources/positconf2024_youtube.png)](https://youtu.be/VS_t5IoQbOE?si=ukHxj9yBNEboS8XT&t=628)
-:::
-
-::: {.column width="30%"}
-#### [New Post!](https://www.pharmar.org/posts/news/updates-aug-2024/){style="margin-left:2.75em"}
-
-![](resources/riskassessment_3_1_1.png){height="225"
-style="margin-left:.25em"}
-:::
-:::
 

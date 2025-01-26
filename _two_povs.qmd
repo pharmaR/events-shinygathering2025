@@ -1,0 +1,18 @@
+
+
+# 🥩 **'Reviewer' POV**
+
+
+
+
+## I want it
+
+![](resources/user_to_example_request_to_it_sm.png)
+
+
+
+
+
+## Start with `{riskassessment}`
+
+![](resources/it_to_user_example_sm.png)

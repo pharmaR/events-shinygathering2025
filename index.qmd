@@ -25,19 +25,22 @@ author:
 
 # 🗓️  Agenda
 
-- `{riskassessment}` App Workstream [5min]{.dim}
-- **`User POV`** - The App's Best Use Case [15min]{.dim}
-- **`Admin POV`** - Configure for your org [20min]{.dim}
-- Room Discussion [10min]{.dim}
-- Closing
+- 🖥️`{riskassessment}` App Workstream [5min]{.dim}
+- 🥩 **`Reviewer POV`** - The App's Best Use Case [15min]{.dim}
+- 🥔 **`Admin POV`** - Configure for your org [20min]{.dim}
+- 💬 Room Discussion [10min]{.dim}
 
 
 
 {{< include _riskassessment_intro.qmd >}}
 
-<!-- {{< include _two_povs.qmd >}} -->
+{{< include _two_povs.qmd >}}
 
-# Closing
+# 💬 Room Discussion
+
+
+
+
 
 ## The Year Ahead
 

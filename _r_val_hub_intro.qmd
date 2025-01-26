@@ -59,7 +59,7 @@ Jaxon Abercrombie, Anuja Das, Antal Martinecz
 ::::
 :::::
 
-:::::: {.fragment}
+
 ::::: {.columns}
 :::: {.column width="29%" .panel .font-size-small}
 #### [`{riskmetric}`](https://github.com/pharmaR/riskmetric)
@@ -82,17 +82,17 @@ Aaron Clark, Jeff Thompson
 :::
 ::::
 
-:::: {.column width="29%" .panel .font-size-small}
-#### [`{riskscore}`](https://github.com/pharmaR/riskscore)
+<!-- :::: {.column width="29%" .panel .font-size-small} -->
+<!-- #### [`{riskscore}`](https://github.com/pharmaR/riskscore) -->
 
-An R data package capturing risk metrics across all of CRAN
+<!-- An R data package capturing risk metrics across all of CRAN -->
 
-::: {.person}
-Aaron Clark
-:::
-::::
+<!-- ::: {.person} -->
+<!-- Aaron Clark -->
+<!-- ::: -->
+<!-- :::: -->
 :::::
-::::::
+
 
 
 
