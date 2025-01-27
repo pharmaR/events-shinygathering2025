@@ -17,12 +17,6 @@
 
 
 
-{{< include _r_consortium.qmd >}}
-
-
-
-
-
 
 
 ## 👷‍♂️ The R Validation Hub: What We Do {transition="slide-in slide-out"}

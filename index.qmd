@@ -55,3 +55,13 @@ _our work is the product of the donated time of many passionate individuals_
 _Slides: 🔗  [For your Review](https://pharmar.github.io/events-shinygathering2025/)_
 :::
 :::
+
+
+
+
+
+
+
+{{< include _r_consortium.qmd >}}
+
+
