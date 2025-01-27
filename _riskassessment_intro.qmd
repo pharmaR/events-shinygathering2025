@@ -87,7 +87,7 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 
 ::: {.column width="80%"}
 ::: {style="font-size:32px" .incremental}
-<br><b>Main goal: compliment GxP "package inclusion requests" with data.</b>
+<br><b>Main goal: complement GxP "package inclusion requests" with data.</b>
 
 :::
 :::
@@ -113,7 +113,7 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 
 ::: {.column width="80%"}
 ::: {style="font-size:24px" .incremental}
-<br><b>Main goal: compliment GxP "package inclusion requests" with data.</b>
+<br><b>Main goal: complement GxP "package inclusion requests" with data.</b>
 
 :::
 :::
@@ -138,7 +138,7 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 
 ::: {.column width="80%"}
 ::: {style="font-size:24px" .incremental}
-<br><b>Main goal: compliment GxP "package inclusion requests" with data.</b>
+<br><b>Main goal: complement GxP "package inclusion requests" with data.</b>
 
 :::
 :::
@@ -161,7 +161,7 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 
 ::: {.column width="80%"}
 ::: {style="font-size:24px"}
-<br><b>Main goal: compliment GxP "package inclusion requests" with data.</b>
+<br><b>Main goal: complement GxP "package inclusion requests" with data.</b>
 
 - Shifts responsibility of assessing package risk to the person(s) requesting it
 
@@ -189,7 +189,7 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 
 ::: {.column width="80%"}
 ::: {style="font-size:24px"}
-<br><b>Main goal: compliment GxP "package inclusion requests" with data.</b>
+<br><b>Main goal: complement GxP "package inclusion requests" with data.</b>
 
 - Shifts responsibility of assessing package risk to the person(s) requesting it
 - Leverage the app's risk-based "decision triage" (based on org-defined rules) to output a risk summary report
@@ -221,7 +221,7 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 
 ::: {.column width="80%"}
 ::: {style="font-size:24px"}
-<br><b>Main goal: compliment GxP "package inclusion requests" with data.</b>
+<br><b>Main goal: complement GxP "package inclusion requests" with data.</b>
 
 - Shifts responsibility of assessing package risk to the person(s) requesting it
 - Leverage the app's risk-based "decision triage" (based on org-defined rules) to output a risk summary report
