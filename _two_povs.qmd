@@ -16,3 +16,28 @@
 ## Start with `{riskassessment}`
 
 ![](resources/it_to_user_example_sm.png)
+
+
+
+# **Live Demo**
+
+🥩 `Reviewer` POV
+
+
+
+## Submit `{riskassessment}` Report(s)
+
+![](resources/user_to_example_reports_to_it_sm_2.png)
+
+
+
+# 🥔 **'Admin' POV**
+
+Jeff Thompson
+
+
+
+
+
+
+

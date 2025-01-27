@@ -39,7 +39,8 @@ style="margin-left:.25em"}
 
 <br>
 
-is a framework to quantify an R package's "risk" by assessing several meaningful metrics designed to evaluate package development best practices, code documentation, community engagement, and development sustainability.<br><br><br><br><br> is a full-fledged R package containing a shiny front-end that augments the utility of `{riskmetric}`. The application's goal is to provide a central hub for an organization to review and assess the risk of R packages, providing handy tools and guide rails along the way.
+is a 
+framework to quantify an R package's "risk" by assessing several meaningful metrics designed to evaluate package development best practices, code documentation, community engagement, and development sustainability.<br><br><br><br><br> is a full-fledged R package containing a shiny front-end that augments the utility of `{riskmetric}`. The application's goal is to provide a central hub for an organization to review and assess the risk of R packages, providing handy tools and guide rails along the way.
 :::
 :::
 
@@ -92,7 +93,7 @@ Sometimes "quality" is measurable! Software dev best practices dictate an R-pack
 :::
 :::
 
-![](resources/user_to_example_pkg_sm.png)
+![](resources/user_to_example_pkg_sm.png){.fragment}
 
 
 

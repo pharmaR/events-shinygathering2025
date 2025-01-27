@@ -42,25 +42,6 @@ author:
 
 
 
-## The Year Ahead
-
-### Upcoming Deliverables
-
-* GxP package list analyses
-* `{riskmetric}` refocused on qualities, not scores
-* A scoreless `{riskassessment}` application
-* Enterprise package cohorts
-* Repositories pipelines
-
-### Key Opportunties
-
-* 📈 **`{riskmetric}` and/or `{riskassessment}` project manager**  
-  milestone planning, sprint organizing, issue triage, stakeholder management
-* 📦 **R package Development Opportunities**  
-  `{riskmetric}`/`{riskassessment}`/`{pharmapkgs}`
-* 🚀 **Infrastructure Development Opportunities**  
-  GitHub workflows for metrics calculations, repository management
-
 ## Thank you
 
 ::: { .center style="color: #444; font-size: 2em; padding: 1.2em 2em;" }
@@ -71,6 +52,6 @@ _our work is the product of the donated time of many passionate individuals_
 
 ::: { style="float: right;" }
 ::: { style="background: white; padding: 0.2em 1em; box-shadow: 0 0.15em 0.5em #0004; border-radius: 2em;" }
-_Slides: 🔗  [bit.ly/PositConf24](https://pharmar.github.io/events-positconf2024)_
+_Slides: 🔗  [For your Review](https://pharmar.github.io/events-shinygathering2025/)_
 :::
 :::
