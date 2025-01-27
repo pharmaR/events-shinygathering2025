@@ -7,7 +7,7 @@ on:
       - main
 
 
-name: Render and Publish
+name: Render & Publish Slides
 
 jobs:
   build-deploy:
